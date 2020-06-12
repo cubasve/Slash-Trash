@@ -1,14 +1,14 @@
-# Slash-Trash
+# Slash Trash
 
-##Description:
-Just like how we shouldn't pollute our global scope when coding, we shouldn't pollute the global in reality.
+## Description:
+**Just like how we shouldn't pollute our global scope when coding, we shouldn't pollute the globe in reality.**
 
-###Background Info:
+### Background Info:
 
 ## Screenshots of Application:
 
-##Technologies Used:
+## Technologies Used:
 
-##Getting Started:
+## Getting Started:
 
-##Next Steps: Planned Future Enhancements
+## Next Steps: Planned Future Enhancements

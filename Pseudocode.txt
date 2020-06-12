@@ -1,0 +1,54 @@
+REQUIREMENTS:
+- Have at least 2 data entities (main functional idea for app & 1:M/M:M relationship with that main entity - embedded or referenced)
+- Have full CRUD operations
+
+
+1:M or M:M relationship (Item: Alternative)
+| Household item                          | Alternative to Household Item |
+-----------------------------------------   -----------------------------
+- id (ObjectId)                             - id (ObjectId)
+- title (string)                            - content (String)
+- category (string)                         - cost (Number)
+- eco alternative ([ObjectId])
+
+QUESTION:
+M:M:
+- Shampoo, Conditioner, Body Wash, Dish Soap: all have same alternatives 
+    Bar, Refill, Buy in bigger size (bulk), Terracycle DropBox for disposables, etc.
+1:M:
+- Specific items (ex. hair removal): alternatives are specific to that one item
+    Threading, Sugaring, Epilator, Shaving, Terracycle DropBox for disposables, etc.
+
+
+
+NOTES:
+- Household item: category(string) --> ex. living room, bathroom, kitchen, etc.
+- Alternative: content (array) --> want to provide multiple options to user
+- Alternative: cost (number) --> min 0, max 9999
+- Alternative: include timestamp: true --> keeps track of date alternative was created
+
+//WIREFRAMES LIST: app's main pages of functionality (ex. Landing page, Posts Index Page, Fave Posts Page, Add Posts Page)
+
+LANDING PAGE: title with background image
+1. RESTful Route:
+2. Add UI:
+3. Router: 
+4. Controllers:
+5. Views: 
+
+ADD ALTERNATIVE: 
+1. RESTful Route:
+2. Add UI:
+3. Router: 
+4. Controllers:
+5. Views: 
+
+SEARCH FOR ALTERNATIVE
+1. RESTful Route:
+2. Add UI:
+3. Router: 
+4. Controllers:
+5. Views: 
+
+
+

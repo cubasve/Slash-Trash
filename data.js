@@ -1,31 +1,25 @@
 exports.householdItem = [
-  {id: 01, title: 'Teflon pan', category: 'Kitchen', alternatives: '' }, //1
-  {id: 02, title: 'Shampoo', category: 'Bathroom', alternatives: ''}, //2
-  {id: 03, title: 'Clothing', category: 'Bedroom', alternatives: ''}, //3
-  {id: 04, title: 'Pencil', category: 'Workspace', alternatives: ''}, //4
-	{id: 05, title: 'Couch', category: 'Living room', alternatives: ''}, //5
+  {id: 01, housItem: 'Pan', category: 'Kitchen', alternatives: ['iro', 'sst', 'ena'] }, //1
+  {id: 02, housItem: 'Shampoo', category: 'Bathroom', alternatives: ['ref', 'bar', 'bul', 'ter' ]}, //2
+  {id: 03, housItem: 'Clothing', category: 'Bedroom', alternatives: ['sec', 'fab', 'rep', 'bor']}, //3
+  {id: 04, housItem: 'Pencil', category: 'Workspace', alternatives: ['wpe', 'smp']}, //4
+	{id: 05, housItem: 'Couch', category: 'Living room', alternatives: ['fab', 'rep']}, //5
 ];
 /*Want to include:
 - Dish sponge: natural loofah (gourd), rag, wooden scrub, copper scrubbers, 
 - Hair removal: sugaring, razor (stainless steel or Terracycle), epilator, threading, hair trimmer
-- Plastic/Saran wrap: besswax wraps, put food into a container with lid, put a plate on top of bowl, silicone wraps,  cloth bowl covers, 
+- Plastic/Saran wrap: beeswax wraps, put food into a container with lid, put a plate on top of bowl, silicone wraps,  cloth bowl covers, 
  */
 
  /*
  MATERIALS TO FOCUS ON:
- - Bamboo, stainless steel, glass, paper/wood, aluminum, silicone, cotton, ceramic
+ - Bamboo, stainless steel, glass, paper/wood, aluminum, silicone, cotton, ceramic, 
  */
 
- /*
- STATE WHAT THE PROBLEM IS FIRST: Why should we avoid plastic?
- - Plastic is not biodegradable (never decomposes): It breaks down into microplastics,
- - Single-use items contribute to the landfill.
- - Plastic is usually not recyclable. It is cheaper for manufacturers to make plastic from stratch. 
- */
 
 exports.ecoAlternative = [
   {
-    id: 'iro', 
+    id: 'iro', // Teflon/non-stick pan
     swap: 'Cast iron', 
     description: 'Will last you a lifetime. Why is it a better option though Eva?' //1
   }, //1
@@ -82,7 +76,7 @@ exports.ecoAlternative = [
     description: 'Borrow a piece of clothing from a family member/friend if you\'re only going to wear it once.', //3
   }, //3
   {
-    id: 'wpe', //Wodden PEncil
+    id: 'wpe', //Wooden PEncil
     swap: 'Wooden pencil', 
     description: 'Wood is compostable.', //4
   }, //4

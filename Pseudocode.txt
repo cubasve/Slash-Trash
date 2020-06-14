@@ -48,15 +48,29 @@ LANDING PAGE: title with background image
 4. Controllers:
 5. Views: 
 
-ADD ALTERNATIVE: 
-1. RESTful Route:
+CREATE ALTERNATIVE: 
+1. RESTful Route: POST /swaps
 2. Add UI:
 3. Router: 
 4. Controllers:
 5. Views: 
 
-SEARCH FOR ALTERNATIVE
-1. RESTful Route:
+DELETE ALTERNATIVE: 
+1. RESTful Route: DELETE /swaps/:id
+2. Add UI:
+3. Router: 
+4. Controllers:
+5. Views: 
+
+UPDATE ALTERNATIVE:
+1. RESTful Route: PUT /swaps/:id
+2. Add UI:
+3. Router: 
+4. Controllers:
+5. Views: 
+
+SEARCH FOR 1 ALTERNATIVE:
+1. RESTful Route: GET /swaps/:id
 2. Add UI:
 3. Router: 
 4. Controllers:

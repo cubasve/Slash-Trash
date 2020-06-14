@@ -24,7 +24,7 @@ exports.householdItem = [
  */
 
 exports.ecoAlternative = [
-  {id: , swap: 'Cast iron', description: 'Will last you a lifetime. Why is it a better option though Eva?'}, //1
+  {id: 123, swap: 'Cast iron', description: 'Will last you a lifetime. Why is it a better option though Eva?'}, //1
   {swap: 'Stainless steel', description: ''}, //1
   {swap: 'Enameled cast iron', description: 'For the people who think cast iron is too high maintenance.'}, //1
   {swap: 'Refill', description: 'Bring your own container to refill at stores or buy pre-packaged in a glass jar where you can return it.'}, //2
@@ -34,8 +34,8 @@ exports.ecoAlternative = [
 	//Terracycle --> pens, skincare products, razors, Brita filter, detergent, electronics, cleaning
   {swap: 'Second-hand', description: 'Thrift shops, Hand-me downs, etc.'}, //3
   {swap: 'Natural fabrics', description: 'Avoid synthetic fabrics that shed microplastics when washed (e.g. polyester, acrylic, nylon). Choose cotton, linen, wool, cashmere, silk, hemp, bamboo, leather. '}, //3 //5
-	{swap: 'Repair the clothes', description: 'Mend, darn, felt, hem, or patch up the piece of clothing instead of discarding it.'}, //3
-	{swap: 'Borrow the clothes', description: 'Borrow a piece of clothing from a family member/friend if you\'re only going to wear it once.'}, //3
+	{swap: 'Repair', description: 'Mend, darn, felt, hem, or patch up the piece of fabric instead of discarding it.'}, //3 //5
+	{swap: 'Borrow', description: 'Borrow a piece of clothing from a family member/friend if you\'re only going to wear it once.'}, //3
 	{swap: 'Wooden pencil', description: 'Wood is compostable.'}, //4
 	{swap: 'Stainless steel mechanical pencil', description: 'Stainless steel is a high-value material and can be reused.'}, //4
 // 	{swap: 'Beeswax candles', description: 'Naturally purify the air'}, //5

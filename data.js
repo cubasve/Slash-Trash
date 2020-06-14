@@ -26,6 +26,7 @@ exports.householdItem = [
 exports.ecoAlternative = [
   {id: 123, swap: 'Cast iron', description: 'Will last you a lifetime. Why is it a better option though Eva?'}, //1
   {swap: 'Stainless steel', description: ''}, //1
+  //NEXT STEP: {swap: 'Stainless steel ${householdItem.title}} --> shows 'Stainless steel pan'
   {swap: 'Enameled cast iron', description: 'For the people who think cast iron is too high maintenance.'}, //1
   {swap: 'Refill', description: 'Bring your own container to refill at stores or buy pre-packaged in a glass jar where you can return it.'}, //2
   {swap: 'Bar', description: 'Package-free, solid bar'}, //2

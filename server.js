@@ -4,13 +4,25 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+// load the env vars
+// require('dotenv').config();
+
+const app = express();
+
+// connect to the MongoDB with mongoose
+require('./config/database');
+
+//Require routess
 const indexRouter = require('./routes/index');
 const itemsRouter = require('./routes/items');
 const alternativesRouter = require('./routes/alternatives');
 //Step 1: Make a router for page
 //Step 2: Add router to middleware!!
-
-const app = express();
+//Step 3: What is the route? HTTP verb : Path
+//Step 4: User interface (a href)
+//Step 5: Routes
+//Step 6: Controllers
+//Step 7: Views
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,6 +34,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//mount all routes with appropriate base paths
 app.use('/', indexRouter);
 app.use('/items', itemsRouter);
 app.use('/', alternativesRouter);

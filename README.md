@@ -1,7 +1,7 @@
 # Slash Trash
 
 ## Description:
-**Just like how we shouldn't pollute our global scope when coding, we shouldn't pollute the globe in real-life.**
+**Just like how we shouldn't pollute our global scope when coding, we shouldn't pollute our globe in real-life.**
 
 ### Background Info:
 

@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 const itemSchema = new Schema ({
 	id: Number,
-	title: String,
+	houseItem: String,
 	category: String,
-	alternative: [{type: Schema.Types.ObjectId, ref: 'Alternative'}],
+	alternatives: [{type: Schema.Types.ObjectId, ref: 'Alternative'}], 
 });
 
 module.exports = mongoose.model('Item', itemSchema);

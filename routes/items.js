@@ -9,6 +9,6 @@ const router = express.Router();
 
 
 //I want to search for an item and get an alternative
-router.get('/items', itemsCtrl.index); //GET - searching for items, but get an alternative back in return
+// router.get('/items', itemsCtrl.index); //GET - searching for items, but get an alternative back in return
 
 module.exports = router;

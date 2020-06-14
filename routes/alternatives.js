@@ -8,10 +8,10 @@ const router = express.Router();
 // });
 
 //Want to add, update and delete an alternative
-router.get('/alternatives', alternativesCtrl.index);
-router.post('/alternatives', alternativesCtrl.addSwap);
-router.delete('/alternatives/:id', alternativesCtrl.deleteSwap);
-router.put('/alternatives/:id', alternativesCtrl.updateSwap);
+// router.get('/alternatives', alternativesCtrl.index);
+// router.post('/alternatives', alternativesCtrl.addSwap);
+// router.delete('/alternatives/:id', alternativesCtrl.deleteSwap);
+// router.put('/alternatives/:id', alternativesCtrl.updateSwap);
 
 module.exports = router;
 

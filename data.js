@@ -1,10 +1,34 @@
 const householdItem = [
   { 
-    _id: 01, 
+    // _id: 01, 
+    _id: ObjectId("01"),
     houseItem: 'Pan', 
     category: 'Kitchen', 
     alternatives: ['iro', 'sst', 'ena'] 
   }, //1
+/*
+EXAMPLE FROM MONGODB LECTURE
+  {
+    _id: ObjectId("5099803df3f4948bd2e983a4"),
+    name: "Joe Smith",
+    contacts: [
+      ObjectId("5099803df3f4948bd2f98391"),
+      ObjectId("5099803df3f4948bd1f97203")
+    ]
+  }   
+
+  {
+    _id: ObjectId("5099803df3f4948bd2f98391"),
+    type: "mobile",
+    contact: "(555) 555-5555"
+  }
+  {
+    _id: ObjectId("5099803df3f4948bd1f97203"),
+    type: "email",
+    contact: "joe@smith.com"
+  }
+  */
+  
   {
     _id: 02, 
     houseItem: 'Shampoo', 
@@ -26,6 +50,14 @@ const householdItem = [
     category: 'Living room', 
     alternatives: ['fab', 'rep']}, //5
 ];
+
+module.exports = {
+  getAll,
+}
+
+function getAll(){
+  return householdItem;
+}
 /*Want to include:
 - Dish sponge: natural loofah (gourd), rag, wooden scrub, copper scrubbers, 
 - Hair removal: sugaring, razor (stainless steel or Terracycle), epilator, threading, hair trimmer
@@ -40,7 +72,8 @@ const householdItem = [
 
 const ecoAlternative = [
   {
-    _id: 'iro', // Teflon/non-stick pan
+    // _id: 'iro', // Teflon/non-stick pan
+    _id: ObjectId("iro"),
     swap: 'Cast Iron', 
     description: 'Will last you a lifetime. Why is it a better option though Eva?' 
   }, //1
@@ -107,3 +140,11 @@ const ecoAlternative = [
     description: 'Stainless steel is a high-value material. There is a high chance it will be recycled and reused.', 
   }, //4
 ];
+
+module.exports = {
+  getAll,
+}
+
+function getAll(){
+  return ecoAlternative;
+}

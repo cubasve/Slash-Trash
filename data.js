@@ -23,6 +23,11 @@ EXAMPLE FROM MONGODB LECTURE
   }
 */
 
+const { v4: uuidv4 } = require('uuid');
+uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+
+//------------------------------------------------------
+
 module.exports = {
   getAll,
 }
@@ -38,7 +43,7 @@ const householdItem = [
     houseItem: 'Pan', 
     category: 'Kitchen', 
     alternatives: [
-      ObjectId('iro'), 
+      ObjectId('iro'), //reference string instead of 'iro'
       ObjectId('sst'), 
       ObjectId('ena'),
     ] 
@@ -118,6 +123,7 @@ const ecoAlternative = [
   {
     // _id: 'iro', // Teflon/non-stick pan
     _id: ObjectId('iro'),
+    //search by field instead of id
     swap: 'Cast Iron', 
     description: 'Will last you a lifetime. Why is it a better option though Eva?' 
   }, //1

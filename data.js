@@ -32,18 +32,18 @@ module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value
       _id: castIronID, //Teflon, non-stick pan
       //search by field instead of id
       swap: 'Cast Iron', 
-      description: '', 
+      description: 'Non-stick pans have a layer of teflon that is gradually removed with use and leaches into the food. Cast iron can be used in the stovetop or oven and will last you a lifetime.', 
     }, //1
     {
       _id: stainlessSteelID,
       swap: 'Stainless Steel', 
-      description: '',
+      description: 'Stainless steel is a high-value material. There is a high chance it will be recycled and reused.',
     }, //1
       //NEXT STEP: {swap: 'Stainless steel ${householdItem.title}} --> shows 'Stainless steel pan'
     {
       _id: enameledCastIronID,
       swap: 'Enameled Cast Iron', 
-      description: '', 
+      description: 'Cast iron must be seasoned/oiled so it remains non-stick. Enameled cast iron is a lower-maintenance option.', 
     }, //1
     {
       _id: refillID,
@@ -95,7 +95,7 @@ module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value
       _id: ssMechPencilID,
       swap: 'Stainless Steel Mechanical Pencil', 
       description: 'Stainless steel is a high-value material. There is a high chance it will be recycled and reused.', 
-    }, //4
+    }, //4 --> should I remove this and just use stainlessSteelID?
   ]
 }
 

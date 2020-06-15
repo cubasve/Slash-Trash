@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 //   useUnifiedTopology: true,
 // });
 
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(process.env.DATABASE_URL, { //comes from .env file: connect app to MongoDB Cloud database
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true

@@ -23,7 +23,7 @@ EXAMPLE FROM MONGODB LECTURE
   }
 */
 
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuidv4 } = require('uuid'); //Creates random strings of ObjectIds for items & alternatives
 // uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed' --> string is returned from function
 
 //------------------------------------------------------
@@ -35,7 +35,7 @@ const { v4: uuidv4 } = require('uuid');
 // function getAll(){
 //   return householdItem;
 // }
-module.exports = {
+module.exports = { //object - array - object
   householdItem: [
     { 
       _id: ObjectId(uuidv4()),
@@ -45,7 +45,7 @@ module.exports = {
         ObjectId(castIronID), //reference string instead of 'iro'
         ObjectId(stainlessSteelID), 
         ObjectId(enameledCastIronID),
-      ] 
+      ],
     }, //1
     {
       _id: ObjectId(uuidv4()),
@@ -56,7 +56,7 @@ module.exports = {
         ObjectId(barID), 
         ObjectId(bulkID),
         ObjectId(terracycleID),
-      ] 
+      ], 
     },
     {
       _id: ObjectId(uuidv4()),
@@ -67,7 +67,7 @@ module.exports = {
         ObjectId(naturalFabricID), 
         ObjectId(repairID),
         ObjectId(borrowID),
-      ] 
+      ], 
     }, //3
     {
       _id: ObjectId(uuidv4()),
@@ -76,7 +76,7 @@ module.exports = {
       alternatives: [
         ObjectId(woodenPencilID), 
         ObjectId(ssMechPencilID), 
-      ] 
+      ], 
     }, //4
     {
       _id: ObjectId(uuidv4()),
@@ -86,7 +86,7 @@ module.exports = {
         ObjectId(naturalFabricID), 
         ObjectId(repairID), 
         ObjectId(secondHandID)
-      ] 
+      ], 
     }, //5
   ]
 }
@@ -132,7 +132,7 @@ module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value
       _id: ObjectId(castIronID), // Teflon/non-stick pan
       //search by field instead of id
       swap: 'Cast Iron', 
-      description: '' 
+      description: '', 
     }, //1
     {
       _id: ObjectId(stainlessSteelID),
@@ -184,7 +184,7 @@ module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value
     {
       _id: ObjectId(borrowID),
       swap: 'Borrow', 
-      description: 'Borrow a piece of clothing from a family member/friend if you\'re only going to wear it once.', 
+      description: 'Borrow from a family member/friend if you\'re only going to wear it once.', 
     }, //3
     {
       _id: ObjectId(woodenPencilID),

@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const alternativeSchema = new Schema ({
-	id: String,
+	// id: String,
+	_id: Schema.Types.ObjectId,
 	swap: String,
 	description: String,
 });

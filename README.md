@@ -19,7 +19,11 @@ STATE WHAT THE PROBLEM IS FIRST: Why should we avoid plastic?
 
 ## Screenshots of Application:
 
+
 ## Technologies Used:
+- MongoDB 
+- Express
+- Node
 
 ## Getting Started:
 

@@ -1,3 +1,28 @@
+/*
+EXAMPLE FROM MONGODB LECTURE
+-----------MAIN: User
+  {
+    _id: ObjectId("5099803df3f4948bd2e983a4"),
+    name: "Joe Smith",
+    contacts: [
+      ObjectId("5099803df3f4948bd2f98391"),
+      ObjectId("5099803df3f4948bd1f97203")
+    ]
+  }   
+
+----------REFERENCED: Contacts
+  {
+    _id: ObjectId("5099803df3f4948bd2f98391"),
+    type: "mobile",
+    contact: "(555) 555-5555"
+  }
+  {
+    _id: ObjectId("5099803df3f4948bd1f97203"),
+    type: "email",
+    contact: "joe@smith.com"
+  }
+*/
+
 module.exports = {
   getAll,
 }
@@ -9,7 +34,7 @@ function getAll(){
 const householdItem = [
   { 
     // _id: 01, 
-    _id: ObjectId('01'),
+    _id: ObjectId('001'),
     houseItem: 'Pan', 
     category: 'Kitchen', 
     alternatives: [
@@ -18,32 +43,9 @@ const householdItem = [
       ObjectId('ena'),
     ] 
   }, //1
-/*
-EXAMPLE FROM MONGODB LECTURE
-  {
-    _id: ObjectId("5099803df3f4948bd2e983a4"),
-    name: "Joe Smith",
-    contacts: [
-      ObjectId("5099803df3f4948bd2f98391"),
-      ObjectId("5099803df3f4948bd1f97203")
-    ]
-  }   
-
-  {
-    _id: ObjectId("5099803df3f4948bd2f98391"),
-    type: "mobile",
-    contact: "(555) 555-5555"
-  }
-  {
-    _id: ObjectId("5099803df3f4948bd1f97203"),
-    type: "email",
-    contact: "joe@smith.com"
-  }
-  */
-  
   {
     // _id: 02, 
-    _id: ObjectId('02'),
+    _id: ObjectId('002'),
     houseItem: 'Shampoo', 
     category: 'Bathroom', 
     alternatives: [
@@ -56,7 +58,7 @@ EXAMPLE FROM MONGODB LECTURE
     // alternatives: ['ref', 'bar', 'bul', 'ter' ]}, //2
   {
     // _id: 03, 
-    _id: ObjectId('03'),
+    _id: ObjectId('003'),
     houseItem: 'Clothing', 
     category: 'Bedroom', 
     // alternatives: ['sec', 'fab', 'rep', 'bor'],
@@ -69,7 +71,7 @@ EXAMPLE FROM MONGODB LECTURE
   }, //3
   {
     // _id: 04, 
-    _id: ObjectId('04'),
+    _id: ObjectId('004'),
     houseItem: 'Pencil', 
     category: 'Workspace', 
     // alternatives: ['wpe', 'smp'],
@@ -80,7 +82,7 @@ EXAMPLE FROM MONGODB LECTURE
   }, //4
 	{
     // _id: 05, 
-    _id: ObjectId('05'),
+    _id: ObjectId('005'),
     houseItem: 'Couch', 
     category: 'Living room', 
     // alternatives: ['fab', 'rep'],

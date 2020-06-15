@@ -10,7 +10,7 @@ require('dotenv').config();
 const app = express();
 
 // connect to the MongoDB with mongoose
-require('./config/database');
+require('./config/database'); 
 
 //Require routess
 const indexRouter = require('./routes/index');

@@ -24,7 +24,7 @@ EXAMPLE FROM MONGODB LECTURE
 */
 
 const { v4: uuidv4 } = require('uuid');
-uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+// uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed' --> string is returned from function
 
 //------------------------------------------------------
 
@@ -38,11 +38,11 @@ uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
 module.exports = {
   householdItem: [
     { 
-      _id: ObjectId('001'),
+      _id: ObjectId(uuidv4()),
       houseItem: 'Pan', 
       category: 'Kitchen', 
       alternatives: [
-        ObjectId('iro'), //reference string instead of 'iro'
+        ObjectId(castIronID), //reference string instead of 'iro'
         ObjectId('sst'), 
         ObjectId('ena'),
       ] 
@@ -111,10 +111,13 @@ module.exports = {
 //   return ecoAlternative;
 // }
 
+//create variable from uuid() holds value of uuid
+const castIronID = uuidv4(); //
+
 module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value pairs (id, swap, description)
   ecoAlternative: [
     {
-      _id: ObjectId('iro'), // Teflon/non-stick pan
+      _id: ObjectId(castIronID), // Teflon/non-stick pan
       //search by field instead of id
       swap: 'Cast Iron', 
       description: 'Will last you a lifetime. Why is it a better option though Eva?' 

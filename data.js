@@ -132,7 +132,7 @@ module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value
       _id: ObjectId(castIronID), // Teflon/non-stick pan
       //search by field instead of id
       swap: 'Cast Iron', 
-      description: 'Will last you a lifetime. Why is it a better option though Eva?' 
+      description: '' 
     }, //1
     {
       _id: ObjectId(stainlessSteelID),
@@ -143,7 +143,7 @@ module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value
     {
       _id: ObjectId(enameledCastIronID),
       swap: 'Enameled Cast Iron', 
-      description: 'For the people who think cast iron is too high maintenance.', 
+      description: '', 
     }, //1
     {
       _id: ObjectId(refillID),

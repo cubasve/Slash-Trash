@@ -32,15 +32,15 @@ try {
     Promise.all([p3, p4]) //2nd asynchronous function
       .then(function (results) {
         console.log(results);
-        // return [p3, p4].save();
+        // return results.save();
       })
       .then(function () {
         process.exit();
       })
       .catch(function (err) {
         console.log(err);
-      });
+      }); //if it goes through the try without any error, it saves the results
   });
 } catch (error) {
-  console.log(error);
+  console.log(error); //if not, it console.logs the error to let us know what happened
 }

@@ -13,12 +13,10 @@ module.exports = {
 // 	let searchQuery = req.query.q;
 // }
 
-// function index(req, res, next) {
-//   res.render('index', { title: 'Slash Trash' });
-// });
 
 function index(req, res) {
-  res.render('alternatives', {title: 'Search for alternatives'});
+	res.render('alternatives', {title: 'Search for alternatives'});
+	//1st argument: path --> /alternatives
 }
 
 // function create(req, res) {

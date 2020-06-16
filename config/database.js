@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 mongoose.connect(process.env.DATABASE_URL, { //comes from .env file: connect app to MongoDB Cloud database
   useNewUrlParser: true,

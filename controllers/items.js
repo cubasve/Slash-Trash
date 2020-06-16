@@ -8,8 +8,9 @@ module.exports = {
 }
 
 function index(req, res, next) {
-	res.render(console.log('items page works'));
+	res.render('/items', {title: 'Swaps List'});
 }
+
 
 //not needed since I seeded data in seeds.js
 // function seed(req, res, next) {

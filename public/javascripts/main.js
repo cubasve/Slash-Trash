@@ -1,6 +1,6 @@
 const { init } = require("../../models/item");
 
-const BASE_URL = '/alternatives/search'
+const BASE_URL = '/alternatives';
 
 /*-------CONSTANTS--------*/ 
 

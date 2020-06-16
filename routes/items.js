@@ -12,3 +12,9 @@ const router = express.Router();
 // router.get('/items', itemsCtrl.index); //GET - searching for items, but get an alternative back in return
 
 module.exports = router;
+//NOTE: already mounted to /items:
+// --> / for /items
+// --> /category --> when a user clicks on the dollhouse
+// --> /all --> when user clicks on 'all' button --> displays all swaps
+// --> PUT /:id --> update swap
+// --> DELETE /:id --> delete swap

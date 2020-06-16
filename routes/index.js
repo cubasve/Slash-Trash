@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Slash Trash' });
 });
 
-router.post('/seed/items', itemCtrl.seed); //not sure about path
-router.get('/seed/success', itemCtrl.seedSuccess);
+router.post('/items', itemCtrl.seed); //not sure about path
+router.get('/success', itemCtrl.seedSuccess);
 
 module.exports = router;

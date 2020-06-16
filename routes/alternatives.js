@@ -6,9 +6,11 @@ const alternativesCtrl = require('../controllers/alternatives');
 //require function from controllers folder
 
 // /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Slash Trash' });
-});
+// router.get('/', function(req, res, next) {
+//   res.render('index', { title: 'Slash Trash' });
+// });
+//this is why /alternatives was showing my main page
+
 
 
 //search for alternatives:

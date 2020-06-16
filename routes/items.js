@@ -4,7 +4,7 @@ const itemsCtrl = require('../controllers/items'); //require in function from co
 
 // ADD ALTERNATIVES TO ITEMS LIST - connected to user
 
-router.post('/', itemsCtrl.seed); //path is --> /items/
+// router.post('/', itemsCtrl.seed); //path is --> /items/
 
 
 

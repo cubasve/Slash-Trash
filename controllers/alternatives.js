@@ -18,7 +18,7 @@ module.exports = {
 // });
 
 function index(req, res) {
-  res.render(console.log('Alternative page works'));
+  res.render('alternatives', {title: 'Search for alternatives'});
 }
 
 // function create(req, res) {

@@ -32,6 +32,7 @@ try {
     Promise.all([p3, p4]) //2nd asynchronous function
       .then(function (results) {
         console.log(results);
+        // return [p3, p4].save();
       })
       .then(function () {
         process.exit();

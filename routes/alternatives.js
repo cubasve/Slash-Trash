@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const alternativesCtrl = require('../controllers/alternatives');
 //require function from controllers folder
 
 // /* GET home page. */

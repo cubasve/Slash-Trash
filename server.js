@@ -13,13 +13,13 @@ const app = express();
 require('./config/database'); 
 
 //Require routess
-const indexRouter = require('./routes/index');
-const itemsRouter = require('./routes/items');
-const alternativesRouter = require('./routes/alternatives');
+const indexRouter = require('./routes/index'); //main page
+const itemsRouter = require('./routes/items'); //user adds the item (ex. /add)
+const alternativesRouter = require('./routes/alternatives'); //search for alternatives (ex. /search)
 //Step 1: Make a router for page
 //Step 2: Add router to middleware!!
 //Step 3: What is the route? HTTP verb : Path
-//Step 4: User interface (a href)
+//Step 4: User interface (a href or button)
 //Step 5: Routes
 //Step 6: Controllers
 //Step 7: Views
@@ -35,9 +35,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //mount all routes with appropriate base paths
-app.use('/', indexRouter);
-app.use('/items', itemsRouter);
-app.use('/', alternativesRouter);
+app.use('/', indexRouter); //main page
+app.use('/items', itemsRouter); //add item
+app.use('/alternatives', alternativesRouter); //search item
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

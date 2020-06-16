@@ -30,7 +30,6 @@ module.exports = { //array (ecoAlternative)--> objects (each swap) --> key:value
   ecoAlternative: [
     {
       _id: castIronID, //Teflon, non-stick pan
-      //search by field instead of id
       swap: 'Cast Iron', 
       description: 'Non-stick pans have a layer of teflon that is gradually removed with use and leaches into the food. Cast iron can be used in the stovetop or oven and will last you a lifetime.', 
     }, //1

@@ -6,8 +6,9 @@ const itemCtrl = require('../controllers/items'); //require in functions from co
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Slash Trash' });
 });
+//redirect to /alternatives page to search for swaps
 
-router.post('/items', itemCtrl.seed); //not sure about path
-router.get('/success', itemCtrl.seedSuccess);
+// router.post('/items', itemCtrl.seed); //not sure about path
+// router.get('/success', itemCtrl.seedSuccess);
 
 module.exports = router;

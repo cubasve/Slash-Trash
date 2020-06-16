@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const itemsCtrl = require('../controllers/items');
 //require in function from controllers folder
 
 // /* GET users listing. */ --> originally users.js - converted to items.js
@@ -7,7 +8,7 @@ const router = express.Router();
 //   res.send('respond with a resource');
 // });
 
-
+router.get('/', itemsCtrl.index);
 //I want to search for an item and get an alternative
 // router.get('/items', itemsCtrl.index); //GET - searching for items, but get an alternative back in return
 

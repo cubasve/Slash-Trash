@@ -1,11 +1,5 @@
-// const data = require("../data"); //get seed data from data.js
-// const Item = require("../models/item"); //get model's data
-
-module.exports = {
-  // seed,
-  // seedSuccess,
-  index,
-};
+const data = require("../data"); //get seed data from data.js
+const Item = require("../models/item"); //get model's data
 
 function index(req, res, next) {
   res.render("/items", { title: "Swaps List" });
@@ -28,28 +22,30 @@ function index(req, res, next) {
 //   res.render("Success");
 // }
 
-const data = require("../data.js"); //add ../
+//add ../
 let seed = function (req, res, next) {
-  let houseHold = JSON.parse(data.householdItem);
-  houseHold.forEach(
-    (h) => {
-      let newHouse = item.create({
-        houseItem: h.houseItem,
-        category: h.category,
-        alternatives: [],
-      });
-    },
-    function (err) {
-      console.log(err);
-    }
-  );
+  //just JS object, not parsing JSOn
+  let houseHold = data.householdItem.map((item) => {
+    let newItem = new Item({
+      //initialize the class
+      houseItem: item.houseItem,
+      category: item.category,
+      alternatives: [],
+    });
+    newItem.save(function (err, householdItem) {
+      if (err) return err;
+      console.log(householdItem);
+    });
+  });
+  res.render("index");
 };
+//newItem.save() is asynchronous so code continues running in background --> while Express code is synchronous --> then it renders the index
 
 let seedEco = function (req, res, next) {
-  let alts = JSON.parse(data.ecoAlternative);
+  let alts = data.ecoAlternative;
   alts.forEach(
     (a) => {
-      let newHouse = item.create({
+      let newHouse = Item.create({
         swap: a.swap,
         description: a.description,
       });
@@ -58,4 +54,11 @@ let seedEco = function (req, res, next) {
       console.log(err);
     }
   );
+  res.render("index");
+};
+
+module.exports = {
+  seed,
+  seedEco,
+  index,
 };

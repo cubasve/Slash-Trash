@@ -131,8 +131,6 @@ EXAMPLE FROM MONGODB LECTURE
     contact: "joe@smith.com"
   }
 */
-// const mongoose = require('mongoose');
-// const Schema = mongoose.Schema;
 
 //------------------------------------------------------
 
@@ -186,7 +184,19 @@ const householdItem = [
  MATERIALS TO FOCUS ON:
  - Bamboo, stainless steel, glass, paper/wood, aluminum, silicone, cotton, ceramic, metal, copper, cork, linen, plant fibers, stoneware, clay
  */
+function getItems() {
+  return householdItem.forEach(function (item) {
+    console.log(item);
+  });
+}
+
+function getAlternatives() {
+  return ecoAlternative.forEach(function (alternative) {
+    console.log(alternative);
+  });
+}
+
 module.exports = {
-  ecoAlternative,
-  householdItem,
+  getItems,
+  getAlternatives,
 };

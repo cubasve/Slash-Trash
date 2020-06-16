@@ -1,16 +1,23 @@
 const express = require('express');
 const router = express.Router();
 const alternativesCtrl = require('../controllers/alternatives');
+
+// const alternative = require('../models/alternative');
 //require function from controllers folder
 
 // /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Slash Trash' });
-// });
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Slash Trash' });
+});
 
 
 //search for alternatives:
 router.get('/', alternativesCtrl.index);
+// router.post('/', alternativeCtrl.create);
+
+
+
+
 
 //Want to add, update and delete an alternative
 // router.get('/alternatives', alternativesCtrl.index);

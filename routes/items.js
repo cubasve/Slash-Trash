@@ -1,7 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const itemsCtrl = require('../controllers/items');
-//require in function from controllers folder
+const itemsCtrl = require('../controllers/items'); //require in function from controllers folder
+
+// ADD ALTERNATIVES TO ITEMS LIST - connected to user
+
+router.post('/', itemsCtrl.seed); //path is --> /items/
+
+
 
 // /* GET users listing. */ --> originally users.js - converted to items.js
 // router.get('/', function(req, res, next) {
@@ -13,6 +18,9 @@ router.get('/', itemsCtrl.index);
 // router.get('/items', itemsCtrl.index); //GET - searching for items, but get an alternative back in return
 
 module.exports = router;
+
+
+
 //NOTE: already mounted to /items:
 // --> / for /items
 // --> /category --> when a user clicks on the dollhouse

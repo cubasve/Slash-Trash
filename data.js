@@ -186,22 +186,6 @@ const householdItem = [
  */
 
 module.exports = {
-  // getItems,
-  // getAlternatives,
   householdItem,
   ecoAlternative,
 };
-
-// function getItems() {
-//   return householdItem;
-//   // .forEach(function (item) {
-//   //   console.log(item);
-//   // });
-// }
-
-// function getAlternatives() {
-//   return ecoAlternative;
-//   // .forEach(function (alternative) {
-//   //   console.log(alternative);
-//   // });
-// }

@@ -1,16 +1,15 @@
-const itemSeed = require('../data'); //get seed data from data.js
-const Item = require('../models/item'); //get model's data
+const itemSeed = require("../data"); //get seed data from data.js
+const Item = require("../models/item"); //get model's data
 
 module.exports = {
   // seed,
   // seedSuccess,
-	index,
-}
+  index,
+};
 
 function index(req, res, next) {
-	res.render('/items', {title: 'Swaps List'});
+  res.render("/items", { title: "Swaps List" });
 }
-
 
 //not needed since I seeded data in seeds.js
 // function seed(req, res, next) {
@@ -27,4 +26,3 @@ function index(req, res, next) {
 // function seedSuccess(req, res, next) {
 // 	res.render('Success');
 // }
-

@@ -19,15 +19,15 @@ try {
   Promise.all([p1, p2]).then(function (results) {
     console.log(results);
     console.log(data);
-    // const p3 = data.householdItem.forEach(function (item) {
-    //   Item.create(item);
-    // });
+    const p3 = data.householdItem.forEach(function (item) {
+      Item.create(item);
+    });
 
-    // const p4 = data.ecoAlternative.forEach(function (alternative) {
-    //   Alternative.create(alternative);
-    // });
-    const p3 = Item.create(data.householdItem);
-    const p4 = Alternative.create(data.ecoAlternative);
+    const p4 = data.ecoAlternative.forEach(function (alternative) {
+      Alternative.create(alternative);
+    });
+    // const p3 = Item.create(data.householdItem);
+    // const p4 = Alternative.create(data.ecoAlternative);
 
     Promise.all([p3, p4]) //2nd asynchronous function
       .then(function (results) {

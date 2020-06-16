@@ -184,19 +184,24 @@ const householdItem = [
  MATERIALS TO FOCUS ON:
  - Bamboo, stainless steel, glass, paper/wood, aluminum, silicone, cotton, ceramic, metal, copper, cork, linen, plant fibers, stoneware, clay
  */
-function getItems() {
-  return householdItem.forEach(function (item) {
-    console.log(item);
-  });
-}
-
-function getAlternatives() {
-  return ecoAlternative.forEach(function (alternative) {
-    console.log(alternative);
-  });
-}
 
 module.exports = {
-  getItems,
-  getAlternatives,
+  // getItems,
+  // getAlternatives,
+  householdItem,
+  ecoAlternative,
 };
+
+// function getItems() {
+//   return householdItem;
+//   // .forEach(function (item) {
+//   //   console.log(item);
+//   // });
+// }
+
+// function getAlternatives() {
+//   return ecoAlternative;
+//   // .forEach(function (alternative) {
+//   //   console.log(alternative);
+//   // });
+// }

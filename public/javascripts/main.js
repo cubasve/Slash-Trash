@@ -1,36 +1,42 @@
 const { init } = require("../../models/item");
 
-const BASE_URL = '/alternatives';
+const BASE_URL = "/alternatives";
 
-/*-------CONSTANTS--------*/ 
+/*-------CONSTANTS--------*/
 
+/*-------APP'S STATE (VARIABLES)--------*/
 
-/*-------APP'S STATE (VARIABLES)--------*/ 
 let alternatives;
 
-/*-------CACHED ELEMENT REFERENCES--------*/ 
-let alternativesList = document.getElementById('alternatives-list');
-let searchButton = document.getElementById('searchBtn');
-let searchInput = document.querySelector('#search-swaps input'); //1st input inside of form id="search-swaps"
+/*-------CACHED ELEMENT REFERENCES--------*/
 
-/*-------EVENT LISTENERS--------*/ 
-searchButton.addEventListener('submit', searchSwaps);
-alternativesList.addEventListener('click', AddAlternative);
+let alternativesList = document.getElementById("alternatives-list"); //section
+let searchButton = document.getElementById("searchBtn");
+let searchInput = document.querySelector("#search-swaps input"); //1st input inside of form id="search-swaps"
 
-/*-------FUNCTIONS--------*/ 
+/*-------EVENT LISTENERS--------*/
+
+searchButton.addEventListener("submit", searchSwaps);
+alternativesList.addEventListener("click", AddAlternative);
+
+/*-------FUNCTIONS--------*/
+
 init();
 
 function init() {
-	alternatives = [];
-	render();
+  alternatives = [];
+  render();
 }
 
-function render() { 
-	//loop over alternatives array
-	let html = alternatives.reduce(function (html, alternative) {
-		return html + `
+function render() {
+  //loop over alternatives array
+
+  let html = alternatives.reduce(function (html, alternative) {
+    return (
+      html +
+      `
 		<div class="each-alternative">
-			<h2 class="householdItem">${householdItem.alternatives.swap}</h2>
+			<h2 class="householdItem">${householdItem.alternatives.swap}</h2> //Am I targeting this correctly?
 			
 			<div class="swap-description">
 				<p class="householdItem">${householdItem.alternatives.description}</p>
@@ -38,10 +44,11 @@ function render() {
 			</div>
 
 		</div>
-		`;
-	}, '');
+		`
+    );
+  }, "");
 
-	alternativesList.innerHTML = html;
+  alternativesList.innerHTML = html;
 }
 //IDK if I should identify the alternative by its id - seeding database lesson says not to
 //Another way: wrap button in a form with some hiden data and submit that form
@@ -49,27 +56,27 @@ function render() {
 //and use event delegation so whenever I click on a button in the list, I can find that moviesid
 
 async function searchSwaps(evt) {
-	evt.preventDefault(); 
-	//Why attach it to form and not button? Works if user clicks enter or button
-	console.log(searchInput.value);
-	const query = searchInput.value;
-	if (query) { //if we have a query, run this function
-		const data = await fetch(`/alternatives/search?q=${query}`)//pass query to fetch
-		.then(res => res.json) //return json
-		console.log(data);
-		alternatives = data.Search;
-		render();
-	}
+  evt.preventDefault();
+  //Why attach it to form and not button? Works if user clicks enter or button
+  console.log(searchInput.value);
+  const query = searchInput.value;
+  if (query) {
+    //if we have a query, run this function
+    const data = await fetch(`/alternatives/search?q=${query}`) //pass query to fetch
+      .then((res) => res.json); //return json
+    console.log(data);
+    alternatives = data.Search;
+    render();
+  }
 }
 
 function AddAlternative(evt) {
-	//if I click a button, add an id to it, 
-	if(evt.target.tagName === 'BUTTON') {
-		//figure out which movie user clicked on
-		const swapID = evt.target.getAttribute('dataID'); 
-		 const alternative = alternatives.find( function (alt) {
-			 //look through alternatives list and find where 
-		 })
-	}
-
+  //if I click a button, add an id to it,
+  if (evt.target.tagName === "BUTTON") {
+    //figure out which movie user clicked on
+    const swapID = evt.target.getAttribute("dataID");
+    const alternative = alternatives.find(function (alt) {
+      //look through alternatives list and find where
+    });
+  }
 }

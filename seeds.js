@@ -3,7 +3,6 @@ const data = require("./data");
 
 const Item = require("./models/item");
 const Alternative = require("./models/alternative");
-// require('dotenv').config();
 
 //When I run the seeds command, I want to reset data back to its original state
 //delete all items and alternatives to prevent duplicates
@@ -17,23 +16,41 @@ try {
   Promise.all([p1, p2]).then(function (results) {
     console.log(results);
     console.log(data);
-    const p3 = insertMany(
-      data.householdItem.forEach(function (item) {
-        Item.create(item);
-      })
-    );
-    const p4 = insertMany(
-      data.ecoAlternative.forEach(function (alternative) {
-        Alternative.create(alternative);
-      })
-    );
-    // const p3 = data.householdItem.forEach(function (item) {
-    //   Item.create(item);
-    // });
 
-    // const p4 = data.ecoAlternative.forEach(function (alternative) {
-    //   Alternative.create(alternative);
-    // });
+    const p3 = data.householdItem.forEach(function (item) {
+      Item.create(item);
+      Item.save(function (err) {
+        if (err) return done(err); //if error,
+        return done(null, Item);
+      });
+      // householdItem.alternatives.forEach(function (swaps) {
+      //   Swaps.create(swaps);
+      // });
+    });
+
+    const p4 = data.ecoAlternative.forEach(function (alternative) {
+      Alternative.create(alternative);
+      Alternative.save(function (err) {
+        if (err) return done(err); //if error,
+        return done(null, Item);
+      });
+    });
+
+    //   Promise.all([p1, p2])
+    //   .then(function(results) {
+    //     console.log(results);
+    //     return Performer.create(data.performers);
+    //   })
+    //   .then(function(performers) {
+    //     console.log(performers);
+    //     return Movie.create(data.movies);
+    //   })
+    //  .then(function(movies) {
+    //     console.log(movies);
+    //   })
+    //   .then(function() {
+    //     process.exit();
+    //   });
 
     Promise.all([p3, p4]) //2nd asynchronous function
       .then(function (results) {
@@ -52,18 +69,34 @@ try {
   next(err);
 }
 
-//not needed since I seeded data in seeds.js
-// function seed(req, res, next) {
-// 	Item.deleteMany({}) //Don't want duplicates in db when server reloads
-// 	Item.insertMany(itemSeed.householdItem) //
-// 	.then(function(householdItem) {
-// 			console.log(householdItem);
-// 			res.redirect('/'); //not sure about path
-// 	}).catch(function (err) {
-// 			next(err);
-// 	})
-// }
-
-// function seedSuccess(req, res, next) {
-// 	res.render('Success');
-// }
+const data = require("data.js");
+let seed = function (req, res, next) {
+  let houseHold = JSON.parse(data.householdItem);
+  // let alts = JSON.parse(data.ecoAlternative)
+  houseHold.forEach(
+    (h) => {
+      let newHouse = item.create({
+        houseItem: h.houseItem,
+        category: h.category,
+        alternatives: [],
+      });
+    },
+    function (err) {
+      console.log(err);
+    }
+  );
+};
+let seedEco = function (req, res, next) {
+  let alts = JSON.parse(data.ecoAlternative);
+  alts.forEach(
+    (a) => {
+      let newHouse = item.create({
+        swap: a.swap,
+        description: a.description,
+      });
+    },
+    function (err) {
+      console.log(err);
+    }
+  );
+};

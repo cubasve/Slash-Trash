@@ -1,5 +1,6 @@
 const User = require('../models/user');
 
+
 function index(req, res, next) {
 	...
 		res.render('users/index', {
@@ -10,3 +11,5 @@ function index(req, res, next) {
 		});
 	});
 }
+
+

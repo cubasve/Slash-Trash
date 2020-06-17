@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
-  _id: Schema.Types.ObjectId,
-});
+const userSchema = new Schema({});
 
 module.exports = mongoose.model("User", userSchema);
+
+//create model called swaps - keeps track of item and alternative #id that user swaps

@@ -11,9 +11,9 @@ router.get("/", function (req, res) {
 //   res.redirect("/alternatives"); //this won't work because it immediately directs user to /alternatives
 // });
 
-router.get("/alternatives", function (req, res) {
-  res.redirect("/alternatives"); //this won't work because it immediately directs user to /alternatives
-});
+// router.get("/alternatives", function (req, res) {
+//   res.redirect("/alternatives"); //this won't work because it immediately directs user to /alternatives
+// });
 
 //redirect to /alternatives page to search for swaps
 

@@ -3,12 +3,15 @@
   <head>
     <title>Slash Trash</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
-    <script defer src="/javascripts/alternatives.js"></script>
   </head>
   <body>
-    <form id="search-swaps">
+    <form id="search-swaps" method="get" action="/alternatives">
       <div class="input-item">
-        <input type="text" placeholder="Search for eco-friendly alternatives" />
+        <input
+          name="q"
+          type="text"
+          placeholder="Search for eco-friendly alternatives"
+        />
         <!-- Placeholder=What you see in the input box before you enter anything -->
         <div class="search-button">
           <button type="submit" id="searchBtn">Search</button>
@@ -17,6 +20,29 @@
       </div>
     </form>
 
-    <section id="alternatives-list"></section>
+    <% if (didSearch) { %>
+    <!-- start searched item -->
+    <% if (item) { %>
+    <h1>Item: <%= item.houseItem %></h1>
+
+    <section id="alternatives-list">
+      <% item.alternatives.forEach(a => { %>
+      <div><%= a.swap %> | <%= a.description %></div>
+      <form method="post" action="/swap">
+        <input type="hidden" name="alternative" value="<%= a._id %>" />
+        <input type="hidden" name="item" value="<%= item._id %>" />
+        <button>Add to List</button>
+      </form>
+      <% }) %>
+    </section>
+    <% } else { %>
+    <h2>No Item Found</h2>
+    <% } %>
+    <!-- end searched item-->
+    <% } else {%>
+    <!-- start did not search -->
+    <h2>Search for Item</h2>
+    <!-- end did not search -->
+    <% } %>
   </body>
 </html>

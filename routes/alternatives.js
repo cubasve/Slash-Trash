@@ -4,15 +4,9 @@ const alternativesCtrl = require("../controllers/alternatives");
 
 // const alternative = require('../models/alternative');
 
-// /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Slash Trash' });
-// });
-//this is why /alternatives was showing my main page
-
 //search for alternatives:
 router.get("/", alternativesCtrl.index);
-router.get("/search", alternativesCtrl.search); //route is /alternatives/search
+// router.get("/search", alternativesCtrl.search); //route is /alternatives/search
 //get info back from seed and send it to browser
 
 // router.post('/', alternativeCtrl.create);

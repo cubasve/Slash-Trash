@@ -1,6 +1,6 @@
-const { init } = require("../../models/item");
-const { ecoAlternative } = require("../../data");
-const item = require("../../models/item");
+const Item = require("../../models/item");
+const ecoAlternative = require("../../data");
+const householdItem = require("../../models/item");
 
 const BASE_URL = "/alternatives";
 
@@ -60,17 +60,17 @@ function render() {
 
 async function searchSwaps(evt) {
   evt.preventDefault();
-  console.log(searchInput.value);
-  const query = searchInput.value;
-  if (query) {
-    //if we have a query, run this function
-    const data = await fetch(`/alternatives/search?q=${query}`) //pass query to fetch
-      .then(function (res) {
-        res.json;
-      }); //return json
-    console.log(data);
-    alternatives = data.Search;
-    render();
+  console.log(searchInput.value); //STEP 1 - Does inputted value appear in console?
+  // const query = searchInput.value; //STEP 2
+  // if (query) {                  
+  //   //if we have a query, run this function
+  //   const data = await fetch(`/alternatives/search?q=${query}`) //pass query to fetch
+  //     .then(function (res) {
+  //       res.json;
+  //     }); //return json
+  //   console.log(data);
+  //   alternatives = data.Search;
+  //   render(); /
   }
 }
 

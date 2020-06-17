@@ -52,35 +52,3 @@ try {
   console.log(error); //if not, it console.logs the error to let us know what happened
   next(err);
 }
-
-// const data = require("data.js");
-// let seed = function (req, res, next) {
-//   let houseHold = JSON.parse(data.householdItem);
-//   // let alts = JSON.parse(data.ecoAlternative)
-//   houseHold.forEach(
-//     (h) => {
-//       let newHouse = item.create({
-//         houseItem: h.houseItem,
-//         category: h.category,
-//         alternatives: [],
-//       });
-//     },
-//     function (err) {
-//       console.log(err);
-//     }
-//   );
-// };
-// let seedEco = function (req, res, next) {
-//   let alts = JSON.parse(data.ecoAlternative);
-//   alts.forEach(
-//     (a) => {
-//       let newHouse = item.create({
-//         swap: a.swap,
-//         description: a.description,
-//       });
-//     },
-//     function (err) {
-//       console.log(err);
-//     }
-//   );
-// };

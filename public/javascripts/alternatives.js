@@ -1,4 +1,6 @@
 const { init } = require("../../models/item");
+const { ecoAlternative } = require("../../data");
+const item = require("../../models/item");
 
 const BASE_URL = "/alternatives";
 
@@ -7,6 +9,7 @@ const BASE_URL = "/alternatives";
 /*-------APP'S STATE (VARIABLES)--------*/
 
 let alternatives;
+let items; //swap list
 
 /*-------CACHED ELEMENT REFERENCES--------*/
 
@@ -53,7 +56,7 @@ function render() {
 //IDK if I should identify the alternative by its id - seeding database lesson says not to
 //Another way: wrap button in a form with some hidden data and submit that form
 //Attach an unique identifier to each of these buttons and when i click this button, set up event handler on this list
-//and use event delegation so whenever I click on a button in the list, I can find that movies' id
+//and use event delegation so whenever I click on a button in the list, I can find that movies'  id
 
 async function searchSwaps(evt) {
   evt.preventDefault();
@@ -71,13 +74,27 @@ async function searchSwaps(evt) {
   }
 }
 
-function AddAlternative(evt) {
-  //if I click a button, add an id to it,
-  if (evt.target.tagName === "BUTTON") {
-    //figure out which movie user clicked on
-    const swapID = evt.target.getAttribute("dataID");
-    const alternative = alternatives.find(function (alt) {
-      //look through alternatives list and find where
-    });
-  }
-}
+//---------------------------------------ADD ALTERNATIVE TO USER"S SWAPLIST
+// async function AddAlternative(evt) {
+//   if (evt.target.tagName === "BUTTON") {
+//     const swapID = evt.target.getAttribute("dataID");
+//     const alternative = alternatives.find(function (alt) {
+//       alt.ObjectId === ObjectId; //not sure if this is correct
+//     });
+//     try {
+//       let mySwaps = fetch("/items", {
+//         method: "POST",
+//         body: {
+//           alternative: ecoAlternative.swap,
+//           description: ecoAlternative.description,
+//         },
+//       }).then(function (res) {
+//         res.json();
+//       });
+//       mySwaps.push(item);
+//       render();
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   }
+// }

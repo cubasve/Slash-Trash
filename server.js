@@ -18,7 +18,7 @@ require("./config/passport");
 //Require routess
 const indexRouter = require("./routes/index"); //main page
 const alternativesRouter = require("./routes/alternatives"); //search for alternatives (ex. /search)
-const userSwapsRouter = require("./routes/userSwaps"); //user adds the item (ex. /add)
+const userSwapsRouter = require("./routes/user"); //user adds the item (ex. /add)
 
 //Step 1: Make a router for page
 //Step 2: Add router to middleware!!

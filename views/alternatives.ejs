@@ -28,13 +28,17 @@
     <section id="alternatives-list">
       <% item.alternatives.forEach(a => { %>
       <div><%= a.swap %> | <%= a.description %></div>
+
+      <!-- This form encompasses the 'Add to list' button-->
       <form method="post" action="/swap">
         <input type="hidden" name="alternative" value="<%= a._id %>" />
         <input type="hidden" name="item" value="<%= item._id %>" />
         <button>Add to List</button>
       </form>
+
       <% }) %>
     </section>
+
     <% } else { %>
     <h2>No Item Found</h2>
     <% } %>

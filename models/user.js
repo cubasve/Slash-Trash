@@ -5,4 +5,4 @@ const userSchema = new Schema({});
 
 module.exports = mongoose.model("User", userSchema);
 
-//create model called swaps - keeps track of item and alternative #id that user swaps
+//use for when you incorporate OAuth

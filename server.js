@@ -14,8 +14,8 @@ require("./config/database");
 
 //Require routess
 const indexRouter = require("./routes/index"); //main page
-const itemsRouter = require("./routes/items"); //user adds the item (ex. /add)
 const alternativesRouter = require("./routes/alternatives"); //search for alternatives (ex. /search)
+const userSwapsRouter = require("./routes/userSwaps"); //user adds the item (ex. /add)
 
 //Step 1: Make a router for page
 //Step 2: Add router to middleware!!
@@ -37,8 +37,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 //mount all routes with appropriate base paths
 app.use("/", indexRouter); //main page
-app.use("/items", itemsRouter); //add item
 app.use("/alternatives", alternativesRouter); //search item
+app.use("/userSwaps", userSwapsRouter); //add item
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const alternativeSchema = new Schema({
   // id: String,
-  // _id: Schema.Types.ObjectId,
+  // _id: Schema.Types.ObjectId, --> no need - mongoose automatically adds id's
   swap: String,
   description: String,
   // user: (type: mongoose.Schema.Types.ObjectId, ref: 'User');

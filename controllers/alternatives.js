@@ -12,7 +12,6 @@ module.exports = {
 //Why use AJAX? clicking a link or submitting a form doesn't trigger a page reload
 //use axios to make call to search
 //What is axios? HTTP client
-
 // async function search(req, res) {
 //   //search parameters are going to be inside req.query
 //   let searchQuery = req.query.q;

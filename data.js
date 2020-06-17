@@ -7,6 +7,7 @@
     --> ObjectId is for mongoose model (data.js is a JS file, not mongoose file)--> I said the id type would be a string
     --> uuidv1() function returns a string 
 */
+
 // require("mongoose").Types.ObjectId;
 // const ObjectId = require("mongoose").Types.ObjectId;
 // const { v1: uuidv1 } = require("uuid"); //Creates random strings of ObjectIds for items & alternatives

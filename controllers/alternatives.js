@@ -1,22 +1,38 @@
-const itemSeed = require('../data'); //get seed data from data.js
-const Alternative = require('../models/alternative'); //get model's data
+const axios = require("axios");
+const itemSeed = require("../data"); //get seed data from data.js
+const Alternative = require("../models/alternative"); //get model's data
 
 module.exports = {
-	// search,
-	index,
-	// create,
-}
+  // search,
+  index,
+  // create,
+};
 
 //Why use AJAX? clicking a link or submitting a form doesn't trigger a page reload
-// function search(req, res) {
-// 	//search parameters are going to be inside req.query
-// 	let searchQuery = req.query.q;
-// }
+//use axios to make call to search
+//What is axios? HTTP client
 
+async function search(req, res) {
+  //search parameters are going to be inside req.query
+  let searchQuery = req.query.q;
+  try {
+    let response = await axios.get(`___&s=${searchQuery}`); //input seeded data);
+    //axios throws an error if status code is other than a 200
+    //data: {} --> 'data' = response that was provided by the server
+    res.json(response.data); //send response data back to client
+  } catch (err) {
+    console.log(err);
+    if (err.response) {
+      return res.status(err.response.status).json(err.response.data);
+    }
+    return res.status(500).jason({ message: "Server Error" });
+    //routing status code & response directly back to client
+  }
+}
 
 function index(req, res) {
-	res.render('alternatives', {title: 'Search for alternatives'});
-	//1st argument: path --> /alternatives
+  res.render("alternatives", { title: "Search for alternatives" });
+  //1st argument: path --> /alternatives
 }
 
 // function create(req, res) {

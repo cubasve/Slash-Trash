@@ -36,22 +36,6 @@ try {
       });
     });
 
-    //   Promise.all([p1, p2])
-    //   .then(function(results) {
-    //     console.log(results);
-    //     return Performer.create(data.performers);
-    //   })
-    //   .then(function(performers) {
-    //     console.log(performers);
-    //     return Movie.create(data.movies);
-    //   })
-    //  .then(function(movies) {
-    //     console.log(movies);
-    //   })
-    //   .then(function() {
-    //     process.exit();
-    //   });
-
     Promise.all([p3, p4]) //2nd asynchronous function
       .then(function (results) {
         console.log(results);

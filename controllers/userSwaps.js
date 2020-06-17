@@ -20,4 +20,4 @@ function create(req, res) {
   });
 }
 
-function deleteSwap(req, res) {}
+function deleteSwap(req, res) { }

@@ -25,7 +25,7 @@ router.get(
 // OAuth logout route
 router.get("/logout", function (req, res) {
   req.logout();
-  res.redirect("/users");
+  res.redirect("/");
 });
 
 //redirect to /alternatives page to search for swaps

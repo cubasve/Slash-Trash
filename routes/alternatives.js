@@ -2,10 +2,20 @@ const express = require("express");
 const router = express.Router();
 const alternativesCtrl = require("../controllers/alternatives");
 
+// Insert this middleware for routes that require a logged in user
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) return next();
+  res.redirect("/auth/google");
+}
+
 // const alternative = require('../models/alternative');
 
 //search for alternatives:
 router.get("/", alternativesCtrl.index);
+//remove isLoggedIn: so visitors can search for alternatives
+
+
+
 // router.get("/search", alternativesCtrl.search); //route is /alternatives/search
 //get info back from seed and send it to browser
 

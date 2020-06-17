@@ -1,34 +1,28 @@
-<!-- <!DOCTYPE html>
+<!-- prettier-ignore -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <title>Slash Trash</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="" class="brand-logo left">SEI Student Fun Facts</a>
-        < Add login UI here -->
-<!-- <ul class="right">
-          <li>
-            <% if (user) { %>
-            <a href="/logout"
-              ><i class="material-icons left">trending_flat</i>Log Out</a
-            >
-            <% } else { %>
-            <a href="/auth/google"
-              ><i class="material-icons left">vpn_key</i>Login with Google</a
-            >
-            <% } %>
-          </li>
-        </ul>
-      </div>
 
-      <!-- <button>Slash Trash</button>
-      <button>Log in With Google</button> -->
-<!-- </nav>
-  </body>
-</html>  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Slash Trash</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="" class="brand-logo left">SEI Student Fun Facts</a>
+
+      <ul class="right">
+        <li>
+          <% if (user) { %>
+          <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+          <% } else { %>
+          <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+          <% } %>
+        </li>
+      </ul>
+    </div>
+  </nav>

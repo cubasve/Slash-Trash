@@ -1,53 +1,79 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Slash Trash</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <body>
-    <form id="search-swaps" method="get" action="/alternatives">
-      <div class="input-item">
-        <input
-          name="q"
-          type="text"
-          placeholder="Search for eco-friendly alternatives"
-        />
-        <!-- Placeholder=What you see in the input box before you enter anything -->
-        <div class="search-button">
-          <button type="submit" id="searchBtn">Search</button>
-          <!-- type="submit" allows you to search by pressing enter or clicking search button ---- type="button" works only when search button is pressed -->
-        </div>
-      </div>
-    </form>
+<%- include('./partials/header') %>
+<form id="search-swaps" method="get" action="/alternatives">
+  <div class="input-item">
+    <input name="q" type="text" placeholder="Search for eco-friendly alternatives" />
+    <!-- Placeholder=What you see in the input box before you enter anything -->
+    <div class="search-button">
+      <button type="submit" id="searchBtn">Search</button>
+      <!-- type="submit" allows you to search by pressing enter or clicking search button ---- type="button" works only when search button is pressed -->
+    </div>
+  </div>
+</form>
 
-    <% if (didSearch) { %>
-    <!-- start searched item -->
-    <% if (item) { %>
+<% if (didSearch) { %>
+<!-- start searched item -->
+<% if (item) { %>
+<h1>Item: <%= item.houseItem %></h1>
+
+<section id="alternatives-list">
+  <% item.alternatives.forEach(a => { %>
+  <div><%= a.swap %> | <%= a.description %></div>
+
+  <% if (user) { %>
+  <form action="/alternatives" method="POST">
+    <button type="submit" class="btn white-text">Add Swap</button>
+  </form>
+  <% } %>
+
+  <!-- This form encompasses the 'Add to list' button-->
+  <form method="post" action="/swap">
+    <input type="hidden" name="alternative" value="<%= a._id %>" />
+    <input type="hidden" name="item" value="<%= item._id %>" />
+    <button>Add to List</button>
+  </form>
+  <!-- A hidden field includes data that cannot be seen or modified by users when a form is submitted --- stores what database record that needs to be updated when the form is submitted-->
+
+  <% }) %>
+</section>
+
+<% } else { %>
+<h2>No Item Found</h2>
+<% } %>
+<!-- end searched item-->
+<% } else {%>
+<!-- start did not search -->
+<h2>Search for Item</h2>
+<!-- end did not search -->
+<% } %>
+
+<!-- <% if (didSearch) { %> -->
+<!-- start searched item -->
+<!-- <% if (item) { %>
     <h1>Item: <%= item.houseItem %></h1>
 
     <section id="alternatives-list">
       <% item.alternatives.forEach(a => { %>
-      <div><%= a.swap %> | <%= a.description %></div>
+      <div><%= a.swap %> | <%= a.description %></div> -->
 
-      <!-- This form encompasses the 'Add to list' button-->
-      <form method="post" action="/swap">
+<!-- This form encompasses the 'Add to list' button-->
+<!-- <form method="post" action="/swap">
         <input type="hidden" name="alternative" value="<%= a._id %>" />
         <input type="hidden" name="item" value="<%= item._id %>" />
         <button>Add to List</button>
-      </form>
-      <!-- A hidden field includes data that cannot be seen or modified by users when a form is submitted --- stores what database record that needs to be updated when the form is submitted-->
+      </form> -->
+<!-- A hidden field includes data that cannot be seen or modified by users when a form is submitted --- stores what database record that needs to be updated when the form is submitted-->
 
-      <% }) %>
+<!-- <% }) %>
     </section>
 
     <% } else { %>
     <h2>No Item Found</h2>
-    <% } %>
-    <!-- end searched item-->
-    <% } else {%>
-    <!-- start did not search -->
-    <h2>Search for Item</h2>
-    <!-- end did not search -->
-    <% } %>
-  </body>
-</html>
+    <% } %> -->
+<!-- end searched item-->
+<!-- <% } else {%> -->
+<!-- start did not search -->
+<!-- <h2>Search for Item</h2> -->
+<!-- end did not search -->
+<!-- <% } %> -->
+<%- include('./partials/footer') %>
+<!-- one dot: same file VS 2 dots: goes up a level in directory-->

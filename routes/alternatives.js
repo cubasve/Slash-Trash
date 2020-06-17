@@ -3,7 +3,6 @@ const router = express.Router();
 const alternativesCtrl = require("../controllers/alternatives");
 
 // const alternative = require('../models/alternative');
-//require function from controllers folder
 
 // /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -13,6 +12,9 @@ const alternativesCtrl = require("../controllers/alternatives");
 
 //search for alternatives:
 router.get("/", alternativesCtrl.index);
+router.get("/search", alternativesCtrl.search); //route is /alternatives/search
+//get info back from seed and send it to browser
+
 // router.post('/', alternativeCtrl.create);
 module.exports = router;
 

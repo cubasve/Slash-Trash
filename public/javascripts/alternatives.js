@@ -17,6 +17,7 @@ let searchInput = document.querySelector("#search-swaps input"); //1st input ins
 /*-------EVENT LISTENERS--------*/
 
 searchButton.addEventListener("submit", searchSwaps);
+
 alternativesList.addEventListener("click", AddAlternative);
 
 /*-------FUNCTIONS--------*/
@@ -30,7 +31,6 @@ function init() {
 
 function render() {
   //loop over alternatives array
-
   let html = alternatives.reduce(function (html, alternative) {
     return (
       html +
@@ -51,19 +51,20 @@ function render() {
   alternativesList.innerHTML = html;
 }
 //IDK if I should identify the alternative by its id - seeding database lesson says not to
-//Another way: wrap button in a form with some hiden data and submit that form
+//Another way: wrap button in a form with some hidden data and submit that form
 //Attach an unique identifier to each of these buttons and when i click this button, set up event handler on this list
-//and use event delegation so whenever I click on a button in the list, I can find that moviesid
+//and use event delegation so whenever I click on a button in the list, I can find that movies' id
 
 async function searchSwaps(evt) {
   evt.preventDefault();
-  //Why attach it to form and not button? Works if user clicks enter or button
   console.log(searchInput.value);
   const query = searchInput.value;
   if (query) {
     //if we have a query, run this function
     const data = await fetch(`/alternatives/search?q=${query}`) //pass query to fetch
-      .then((res) => res.json); //return json
+      .then(function (res) {
+        res.json;
+      }); //return json
     console.log(data);
     alternatives = data.Search;
     render();

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const itemsCtrl = require("../controllers/items"); //require in function from controllers folder
+const itemsCtrl = require("../controllers/items");
 
 // ADD ALTERNATIVES TO ITEMS LIST - connected to user
 

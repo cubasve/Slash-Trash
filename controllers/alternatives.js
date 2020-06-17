@@ -1,7 +1,7 @@
-// const axios = require("axios");
 // const itemSeed = require("../data"); //get seed data from data.js
 const Alternative = require("../models/alternative"); //get model's data
 const Item = require("../models/item");
+const userSwap = require("../models/userSwap");
 
 module.exports = {
   // search,

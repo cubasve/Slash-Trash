@@ -2,6 +2,8 @@ const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
+const session = require("express-session");
+const passport = require("passport");
 const logger = require("morgan");
 
 // load the env vars
@@ -11,6 +13,7 @@ const app = express();
 
 // connect to the MongoDB with mongoose
 require("./config/database");
+require("./config/passport");
 
 //Require routess
 const indexRouter = require("./routes/index"); //main page
@@ -33,12 +36,21 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(
+  session({
+    secret: "Lacieniga",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(express.static(path.join(__dirname, "public")));
 
 //mount all routes with appropriate base paths
 app.use("/", indexRouter); //main page
 app.use("/alternatives", alternativesRouter); //search item
-app.use("/userSwaps", userSwapsRouter); //add item
+app.use("/swaps", userSwapsRouter); //add item
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

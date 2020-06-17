@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const passport = require("passport");
 const itemCtrl = require("../controllers/items"); //require in functions from controllers
 
 /* GET home page. */
@@ -7,13 +8,25 @@ router.get("/", function (req, res) {
   res.render("index", { title: "Slash Trash" });
 });
 
-// router.get("/", function (req, res, next) {
-//   res.redirect("/alternatives"); //this won't work because it immediately directs user to /alternatives
-// });
+router.get(
+  "/auth/google",
+  passport.authenticate("google", { scope: ["profile", "email"] })
+);
 
-// router.get("/alternatives", function (req, res) {
-//   res.redirect("/alternatives"); //this won't work because it immediately directs user to /alternatives
-// });
+// Google OAuth callback route
+router.get(
+  "/oauth2callback",
+  passport.authenticate("google", {
+    successRedirect: "/users",
+    failureRedirect: "/users",
+  })
+);
+
+// OAuth logout route
+router.get("/logout", function (req, res) {
+  req.logout();
+  res.redirect("/users");
+});
 
 //redirect to /alternatives page to search for swaps
 

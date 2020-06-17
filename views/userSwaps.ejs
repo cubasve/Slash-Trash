@@ -1,1 +1,15 @@
-<%- include('../partials/header') %> <%- include('../partials/footer') %>
+<%- include('../partials/header') %>
+
+<section id="userSwap-list">
+  <% item.alternatives.forEach(a => { %>
+  <div><%= a.swap %> | <%= a.description %></div>
+
+  <!-- This form encompasses the 'Add to list' button-->
+  <form method="delete" action="/swap">
+    <button>Delete</button>
+  </form>
+
+  <% }) %>
+</section>
+
+<%- include('../partials/footer') %>

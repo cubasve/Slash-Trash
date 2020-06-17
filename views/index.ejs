@@ -5,6 +5,28 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="" class="brand-logo left">SEI Student Fun Facts</a>
+        <!-- Add login UI here -->
+        <ul class="right">
+          <li>
+            <% if (user) { %>
+            <a href="/logout"
+              ><i class="material-icons left">trending_flat</i>Log Out</a
+            >
+            <% } else { %>
+            <a href="/auth/google"
+              ><i class="material-icons left">vpn_key</i>Login with Google</a
+            >
+            <% } %>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <button>Slash Trash</button>
+      <button>Log in With Google</button> -->
+    </nav>
     <h1>Slash Trash</h1>
     <h2>Track your waste reduction</h2>
     <h3>Start your journey to a low-waste lifestyle</h3>

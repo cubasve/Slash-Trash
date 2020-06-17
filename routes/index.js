@@ -5,7 +5,7 @@ const itemCtrl = require("../controllers/items"); //require in functions from co
 
 /* GET home page. */
 router.get("/", function (req, res) {
-  res.render("index", { title: "Slash Trash" });
+  res.render("index", { title: "Slash Trash" }); //pass user into object
 });
 
 router.get(
@@ -17,8 +17,8 @@ router.get(
 router.get(
   "/oauth2callback",
   passport.authenticate("google", {
-    successRedirect: "/users",
-    failureRedirect: "/users",
+    successRedirect: "/",
+    failureRedirect: "/",
   })
 );
 

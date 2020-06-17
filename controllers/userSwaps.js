@@ -1,6 +1,6 @@
 const Alternative = require("../models/alternative");
 const Item = require("../models/item");
-const userSwap = require('../models/userSwap');
+const userSwap = require("../models/userSwap");
 
 module.exports = {
   create,
@@ -8,19 +8,16 @@ module.exports = {
 };
 
 function create(req, res) {
-	
-	res.render("swaps");
+  res.render("swaps");
 }
 
 function create(req, res) {
-  Movie.findById(req.params.id, function(err, movie) {
+  Movie.findById(req.params.id, function (err, movie) {
     movie.reviews.push(req.body);
-    movie.save(function(err) {
+    movie.save(function (err) {
       res.redirect(`/movies/${movie._id}`);
     });
   });
 }
 
-
-
-function deleteSwap(req, res) {//}
+function deleteSwap(req, res) {}

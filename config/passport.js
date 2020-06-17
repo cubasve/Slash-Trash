@@ -10,7 +10,7 @@ passport.use(
       callbackURL: process.env.GOOGLE_CALLBACK,
     },
     function (accessToken, refreshToken, profile, cb) {
-      Student.findOne({ googleId: profile.id }, function (err, student) {
+      User.findOne({ googleId: profile.id }, function (err, user) {
         if (err) return cb(err);
         if (user) {
           return cb(null, user);

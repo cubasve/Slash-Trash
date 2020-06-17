@@ -8,7 +8,6 @@ module.exports = {
 };
 
 function createSwap(req, res) {
-
 	req.user.swapsForUser.push(req.body); //req.body = item and alternative's id's
 	req.user.save(function (err) {
 		res.redirect("/alternatives"); //swaps are attached to user

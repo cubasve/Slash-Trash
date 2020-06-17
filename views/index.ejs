@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Slash Trash</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="" class="brand-logo left">Slash Trash</a>
-        <!-- Add login UI here -->
-        <ul class="right">
-          <li>
-            <% if (user) { %>
-            <a href="/logout"
-              ><i class="material-icons left">trending_flat</i>Log Out</a
-            >
-            <% } else { %>
-            <a href="/auth/google"
-              ><i class="material-icons left">vpn_key</i>Login with Google</a
-            >
-            <% } %>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <h1>Slash Trash</h1>
-    <h2>Track your waste reduction</h2>
-    <h3>Start your journey to a low-waste lifestyle</h3>
-    <form action="/alternatives" method="GET">
-      <button type="submit" id="alternatives-page">Search for Swaps</button>
-    </form>
-    <!-- <button>Search for Swaps</button> -->
 
-    <!-- <form action="/seed/items" method="POST">
+<head>
+  <title>Slash Trash</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="" class="brand-logo left">Slash Trash</a>
+      <!-- Add login UI here -->
+      <ul class="right">
+        <li>
+          <% if (user) { %>
+          <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+          <% } else { %>
+          <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+          <% } %>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Slash Trash</h1>
+  <h2>Track your waste reduction</h2>
+  <h3>Start your journey to a low-waste lifestyle</h3>
+  <form action="/alternatives" method="GET">
+    <button type="submit" id="alternatives-page">Search for Swaps</button>
+  </form>
+
+  <!-- <form action="/seed/items" method="POST">
       <button type="submit">Seed Data</button>
     </form> -->
-  </body>
+</body>
+
 </html>

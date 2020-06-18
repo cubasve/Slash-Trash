@@ -18,11 +18,19 @@ function createSwap(req, res) {
 		//swaps are now attached to logged in user
 	});
 }
-//
+// 1. res.render("/swaps", )
+//2. Add 2nd parameter to callback function --> inside of it, call res.render()
 
-
+//RESTful route: DELETE /swaps/:id
 function deleteSwap(req, res) {
-
+	req.user.swapsForUser(req.body); //get the id of item and alternative (req.body);
+	const index = req.user.swapsForUser.deleteOne(function (swap) {
+		req.body === parseInt(swap);
+		req.user.splice(index, 1);
+		req.user.save(function (err) {
+			res.render();
+		})
+	});
 }
 //get the specific fact to delete (_id)
 //use the mongoose method to remove an embedded document from the student instance (req.user === STudent instance)

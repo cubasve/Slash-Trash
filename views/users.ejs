@@ -4,22 +4,10 @@
   <form method="get" action="/swaps">
     <input type="text" name="alternative" value="<%= a._id %>" />
     <input type="text" name="item" value="<%= item._id %>" />
-    <button>Add Swap</button>
   </form>
   <form method="delete" action="/swaps">
-    <button>Delete</button>
+    <button>Delete Swap</button>
   </form>
 </section>
-
-<!-- <section id="userSwap-list">
-  <% item.alternatives.forEach(a => { %>
-  <div><%= a.swap %> | <%= a.description %></div>
-
-  <form method="delete" action="/swaps">
-    <button>Delete</button>
-  </form>
-
-  <% }) %>
-</section> -->
 
 <%- include('../partials/footer') %>

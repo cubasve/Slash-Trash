@@ -48,12 +48,31 @@ function createSwap(req, res) {
 }
 
 //RESTful route: DELETE /swaps/:id
+// function deleteSwap(req, res) {
+// 	req.user.swapsForUser.pull(req.params.id); //get the id of item and alternative (req.body); --> parent.children.pull(_id) OR parent.children.id(_id).remove();
+// 	req.user.swapsForUser.remove();
+// 	req.user.save(function (err, user) {
+// 		res.redirect('/swaps');
+// 	});
+// }
+
 function deleteSwap(req, res) {
-	req.user.swapsForUser.pull(req.params.id); //get the id of item and alternative (req.body);
-	req.user.save(function (err, user) {
-		res.redirect('/swaps');
-	});
+	// parent.children.pull(_id);
+	req.user.swapsForUser.pull(req.params.id);
+	req.user.swapsForUser = null;
+	res.direct('/swaps');
 }
+
+// Equivalent to `parent.children.pull(_id)`
+// parent.children.id(_id).remove();
+// Equivalent to `parent.child = null`
+// parent.child.remove();
+// parent.save(function (err) {
+// 	if (err) return handleError(err);
+// 	console.log('the subdocs were removed');
+// });
+
+
 //get the specific fact to delete (_id)
 //use the mongoose method to remove an embedded document from the student instance (req.user === STudent instance)
 //make sure the record is updated (save)

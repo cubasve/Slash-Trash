@@ -6,7 +6,7 @@
     <li><%= swap.item.houseItem %> -->
       <%= swap.alternative.swap %></li>
 
-    <form action="/swaps/<%= swap.id %>?_method=DELETE">
+    <form action="/swaps/<%= swap.id %>?_method=DELETE" class="delete-form" method="POST">
       <button type="submit" class="btn white-text">Delete Swap</button>
     </form>
     <% }) %>

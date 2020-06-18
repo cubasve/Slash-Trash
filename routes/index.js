@@ -17,15 +17,15 @@ router.get(
 router.get(
   "/oauth2callback",
   passport.authenticate("google", {
-    successRedirect: "/",
-    failureRedirect: "/",
+    successRedirect: "/alternatives",
+    failureRedirect: "/alternatives",
   })
 );
 
 // OAuth logout route
 router.get("/logout", function (req, res) {
   req.logout();
-  res.redirect("/");
+  res.redirect("/alternatives");
 });
 
 //redirect to /alternatives page to search for swaps

@@ -31,6 +31,9 @@ https://slash-trash.herokuapp.com/
 - **Additional Items and Alternatives:**
   This application currently has 5 items and 13 alternatives. More data needs to be added.
 
+- **Incorporate a problem-solution structure:**
+  The problem is the current household item and the solution is the eco-friendly alternative. I only stated why the alternative is a better choice, but did not state the issue with the household item. The users may not know why they should use the alternative.
+
 - **Include a page for beginners and a page for tips:**
   Users who are novices to this lifestyle might feel overwhelmed with all the information.
   A resource that includes beginner swaps (e.g. using a reusable water bottle or grocery bag) and tips to guide experienced and/or novice users on their journey would be beneficial.

@@ -1,14 +1,17 @@
-<%- include('../partials/header') %>
+<%- include('./partials/header') %>
 
 <section id="userSwap-list">
-  <!-- <form method="get" action="/swaps">
-    <input type="text" name="alternative" value="<%= a._id %>" />
-    <input type="text" name="item" value="<%= item._id %>" />
-  </form> -->
+  <ul>
+    <% user.swapsForUser.forEach(function (swap) { %>
+    <li><%= swap.item %>
+      <%= swap.alternative %></li>
+  </ul>
 
-  <form method="DELETE" action="/swaps">
-    <button type="button" class="btn white-text">Delete Swap</button>
+  <form action="/swaps/<%= swap.id %>?_method=DELETE">
+    <button type="submit" class="btn white-text">Delete Swap</button>
   </form>
+
+  <% }) %>
 </section>
 
-<%- include('../partials/footer') %>
+<%- include('./partials/footer') %>

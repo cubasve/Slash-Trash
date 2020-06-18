@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const passport = require("passport");
-const itemCtrl = require("../controllers/items"); //require in functions from controllers
+const itemCtrl = require("../controllers/items");
 
 /* GET home page. */
 router.get("/", function (req, res) {
-  res.render("index", { title: "Slash Trash" }); //pass user into object
+  res.render("index", { title: "Slash Trash" });
 });
 
 router.get(

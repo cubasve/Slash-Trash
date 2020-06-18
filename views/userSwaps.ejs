@@ -1,16 +1,27 @@
 <%- include('./partials/header') %>
-
-<section id="userSwap-list">
-  <ul>
+<h3><%= user.name %>'s Swaps</h3>
+<% if (user.swapsForUser.length > 0) { %>
+<table>
+  <thead>
+    <tr>
+      <th>Item: </th>
+      <th>Alternative: </th>
+    </tr>
+  </thead>
+  <tbody>
     <% user.swapsForUser.forEach(function (swap) { %>
-    <li><%= swap.item.houseItem %> -->
-      <%= swap.alternative.swap %></li>
-
+    <tr><%= swap.item.houseItem %></tr>
+    <tr><%= swap.alternative.swap %></tr>
     <form action="/swaps/<%= swap.id %>?_method=DELETE" class="delete-form" method="POST">
       <button type="submit" class="btn white-text">Delete Swap</button>
     </form>
+
     <% }) %>
-  </ul>
-</section>
+  </tbody>
+</table>
+
+<% } else { %>
+<h6>No Swaps Added</h6>
+<% } %>
 
 <%- include('./partials/footer') %>

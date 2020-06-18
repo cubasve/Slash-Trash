@@ -1,4 +1,11 @@
 <%- include('./partials/header') %>
+<br>
+<form action="/swaps" method="GET">
+  <button type="submit" class="btn white-text">See your swap list</button>
+</form>
+
+<br>
+
 <form id="search-swaps" method="get" action="/alternatives">
   <div class="input-item">
     <input name="q" type="text" placeholder="Search for eco-friendly alternatives" autocomplete="off" />
@@ -16,7 +23,7 @@
 <h3>Item: <%= item.houseItem %></h3>
 
 <section id="alternatives-list">
-  <% item.alternatives.forEach(a => { %>
+  <% item.alternatives.forEach(function (a){ %>
   <div class="product-details">
     <div class="searched-swap">
       <h4><%= a.swap %>:</h4>

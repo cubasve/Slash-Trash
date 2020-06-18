@@ -20,7 +20,7 @@ function listSwap(req, res) {
 	}
 	User.findById(req.user._id).populate('swapsForUser.item').populate('swapsForUser.alternative').exec(function (err, user) {
 		console.log(user);
-		res.render('users', { user: user });
+		res.render('userSwaps', { user: user });
 	})
 	//name of EJS file - not /swaps, /users
 	//render a view
@@ -74,16 +74,3 @@ function deleteSwap(req, res) {
 // 	if (err) return handleError(err);
 // 	console.log('the subdocs were removed');
 // });
-
-
-//get the specific fact to delete (_id)
-//use the mongoose method to remove an embedded document from the student instance (req.user === STudent instance)
-//make sure the record is updated (save)
-//redirect back to /swaps
-
-
-
-
-
-
-

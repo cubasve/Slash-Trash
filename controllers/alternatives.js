@@ -9,7 +9,7 @@ module.exports = {
 async function index(req, res) {
   let item = null; //don't want any item appearing --> blank page with search bar
   let didSearch = false; //default: user didn't search for anything
-  if (req.query.q) {//req.query only exists if user searched for something --> /altrnatives?q=shampoo (searched for shampoo)
+  if (req.query.q) {//req.query only exists if user searched for something --> /alternatives?q=shampoo (searched for shampoo)
     // if this is responding to form submission (search)
     // get the item that matches the search
     // render page with item

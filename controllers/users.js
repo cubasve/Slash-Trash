@@ -11,15 +11,19 @@ module.exports = {
 //2. make request to server --> go through passport middleware 
 //3. passport pulls userID out of session and fetch user from database
 //4. attach user document to req.user --> REQ.USER = LOGGED IN USER VIA OAUTH
+//swaps are now attached to logged in user
 
 function createSwap(req, res) {
 	req.user.swapsForUser.push(req.body); //req.body = POST REQUEST --> data is inside body --> What's the data? item and alternative's id's 
 	req.user.save(function (err) {
 		res.redirect("/alternatives");
-		//swaps are now attached to logged in user
 	});
+
+	// req.user.save(function (err, swapsForUser) {
+	// 	res.render('/swaps', { swaps: swapsForUser });
+	// });
 }
-//Add 2nd parameter to callback function --> inside of it, call res.render("/swaps", ...)
+
 
 //RESTful route: DELETE /swaps/:id
 function deleteSwap(req, res) {

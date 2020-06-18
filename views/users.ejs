@@ -1,12 +1,13 @@
 <%- include('../partials/header') %>
 
 <section id="userSwap-list">
-  <form method="get" action="/swaps">
+  <!-- <form method="get" action="/swaps">
     <input type="text" name="alternative" value="<%= a._id %>" />
     <input type="text" name="item" value="<%= item._id %>" />
-  </form>
+  </form> -->
+
   <form method="delete" action="/swaps">
-    <button>Delete Swap</button>
+    <button type="button" class="btn white-text">Delete Swap</button>
   </form>
 </section>
 

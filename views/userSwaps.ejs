@@ -14,17 +14,20 @@
     <tr>
       <th>Item: </th>
       <th>Alternative: </th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <% user.swapsForUser.forEach(function (swap) { %>
-    <tr><%= swap.item.houseItem %></tr>
-    <tr><%= swap.alternative.swap %></tr>
-
-    <form action="/swaps/<%= swap.id %>?_method=DELETE" class="delete-form" method="POST">
-      <button type="submit" class="btn white-text">Delete Swap</button>
-    </form>
-
+    <tr>
+      <td><%= swap.item.houseItem %></td>
+      <td><%= swap.alternative.swap %></td>
+      <td>
+        <form action="/swaps/<%= swap.id %>?_method=DELETE" class="delete-form" method="POST">
+          <button type="submit" class="btn white-text">Delete Swap</button>
+        </form>
+      </td>
+    </tr>
     <% }) %>
   </tbody>
 </table>

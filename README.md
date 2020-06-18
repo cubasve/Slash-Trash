@@ -24,6 +24,7 @@ Why should we avoid plastic?
 - Node
 
 ## Getting Started:
+https://slash-trash.herokuapp.com/
 
 ## Next Steps: Planned Future Enhancements
 

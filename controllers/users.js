@@ -47,21 +47,24 @@ function createSwap(req, res) {
 	});
 }
 
-//RESTful route: DELETE /swaps/:id
+// RESTful route: DELETE / swaps /: id
+function deleteSwap(req, res) {
+	req.user.swapsForUser.pull(req.params.id); //get the id of item and alternative (req.body); --> parent.children.pull(_id) OR parent.children.id(_id).remove();
+	req.user.swapsForUser.remove();
+	req.user.save(function (err, user) {
+		res.redirect('/swaps');
+	});
+}
+
 // function deleteSwap(req, res) {
-// 	req.user.swapsForUser.pull(req.params.id); //get the id of item and alternative (req.body); --> parent.children.pull(_id) OR parent.children.id(_id).remove();
+// 	// parent.children.pull(_id);
+// 	req.user.swapsForUser.pull(req.params.id);
 // 	req.user.swapsForUser.remove();
-// 	req.user.save(function (err, user) {
-// 		res.redirect('/swaps');
+// 	// req.user.swapsForUser = null;
+// 	req.user.save(function (err) {
+// 		res.direct('/swaps');
 // 	});
 // }
-
-function deleteSwap(req, res) {
-	// parent.children.pull(_id);
-	req.user.swapsForUser.pull(req.params.id);
-	req.user.swapsForUser = null;
-	res.direct('/swaps');
-}
 
 // Equivalent to `parent.children.pull(_id)`
 // parent.children.id(_id).remove();

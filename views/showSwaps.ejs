@@ -1,0 +1,12 @@
+<%- include('./partials/header') %>
+
+<section id="userSwap-list">
+    <ul>
+        <form action="/swaps/<%= sw.id %>?_method=DELETE">
+            <button type="submit" class="btn white-text">Delete Swap</button>
+        </form>
+        <% }) %>
+    </ul>
+</section>
+
+<%- include('./partials/footer') %>

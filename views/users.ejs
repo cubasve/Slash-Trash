@@ -3,15 +3,14 @@
 <section id="userSwap-list">
   <ul>
     <% user.swapsForUser.forEach(function (swap) { %>
-    <li><%= swap.item %>
-      <%= swap.alternative %></li>
+    <li><%= swap.item.houseItem %> -->
+      <%= swap.alternative.swap %></li>
+
+    <form action="/swaps/<%= swap.id %>?_method=DELETE">
+      <button type="submit" class="btn white-text">Delete Swap</button>
+    </form>
+    <% }) %>
   </ul>
-
-  <form action="/swaps/<%= swap.id %>?_method=DELETE">
-    <button type="submit" class="btn white-text">Delete Swap</button>
-  </form>
-
-  <% }) %>
 </section>
 
 <%- include('./partials/footer') %>

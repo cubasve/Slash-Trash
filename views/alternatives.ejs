@@ -13,32 +13,46 @@
 <% if (didSearch) { %>
 <!-- start searched item -->
 <% if (item) { %>
-<h1>Item: <%= item.houseItem %></h1>
+<h3>Item: <%= item.houseItem %></h3>
 
 <section id="alternatives-list">
   <% item.alternatives.forEach(a => { %>
-  <div><%= a.swap %> | <%= a.description %></div>
+  <div class="product-details">
+    <div class="searched-swap">
+      <h4><%= a.swap %>:</h4>
+      <% if (user) { %>
+      <form method="POST" action="/swaps">
+        <input type="hidden" name="alternative" value="<%= a._id %>" />
+        <input type="hidden" name="item" value="<%= item._id %>" />
+        <button type="submit" class="btn white-text">Add Swap</button>
+      </form>
+      <% } %>
+    </div>
+    <div class="swap-description">
+      <h5><%= a.description %></h5>
+    </div>
+  </div>
 
   <!-- This form encompasses the 'Add to list' button-->
-  <% if (user) { %>
+  <!-- <% if (user) { %>
   <form method="POST" action="/swaps">
     <input type="hidden" name="alternative" value="<%= a._id %>" />
     <input type="hidden" name="item" value="<%= item._id %>" />
     <button type="submit" class="btn white-text">Add Swap</button>
   </form>
-  <% } %>
+  <% } %> -->
   <!-- A hidden field includes data that cannot be seen or modified by users when a form is submitted --- stores what database record that needs to be updated when the form is submitted-->
 
   <% }) %>
 </section>
 
 <% } else { %>
-<h2>No Item Found</h2>
+<h3>No Item Found</h3>
 <% } %>
 <!-- end searched item-->
 <% } else {%>
 <!-- start did not search -->
-<h2>Search for Item</h2>
+<h3>Search for Item</h3>
 <!-- end did not search -->
 <% } %>
 

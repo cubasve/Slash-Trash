@@ -3,22 +3,17 @@
 ## Description:
 
 **Just like how we shouldn't pollute our global scope when coding, we shouldn't pollute our globe in real-life.**
-Slash Trash tracks a user's journey to a low-waste lifestyle by documenting their product changes in the household.
-It include a search bar to find alternatives for everyday household items.
-The application provides a way for a user to take actionable steps to preserve the Earth.
+
+Slash Trash is a user's tool to a low-waste lifestyle by tracking their product changes in the household.
+It includes a search bar to find alternatives for everyday household items.
+The application provides a way for a user to take actionable steps to go green.
 
 ### Background Info:
+Plastic is ubiquitous in our society. It has many applications across multiple industries. Because of its widespread use, and often one-time use, it contributes to landfills.
 
-Because of plastic's durability, it has many applications across multiple industries.
-It
-
-Plastic's
-
-STATE WHAT THE PROBLEM IS FIRST: Why should we avoid plastic?
-
-- Plastic is not biodegradable (never decomposes): It breaks down into microplastics,
-- Single-use items contribute to the landfill.
-- Plastic is usually not recyclable. It is cheaper for manufacturers to make plastic from stratch.
+Why should we avoid plastic?
+1. Plastic is not biodegradable (never decomposes). Instead, it breaks down into microplastics that float in our oceans and waterways.
+2. Recycled plastic is inferior to virgin plastic (newly-manufactured plastic). There is a finite amount of times recycled plastic can be recycled.
 
 ## Screenshots of Application:
 
@@ -32,19 +27,17 @@ STATE WHAT THE PROBLEM IS FIRST: Why should we avoid plastic?
 
 ## Next Steps: Planned Future Enhancements
 
--**Expand Items and Alternatives**
-This application currently has 5 items and 12 alternatives. More data needs to be added.
+- **Additional Items and Alternatives:**
+  This application currently has 5 items and 13 alternatives. More data needs to be added.
 
-- **Include a page for beginners:**
-  Users who are novices to this idea might feel overwhelmed with all the information.
-  A link that includes beginner swaps (e.g. using a reusable water bottle or grocery bag) would be beneficial.
-
-- **Include a page for Tips:**
-  An additional resource to guide novice and/or experienced users on their journey to low-waste living.
-  Incorporating a page that provides tips and tricks would be great.
+- **Include a page for beginners and a page for tips:**
+  Users who are novices to this lifestyle might feel overwhelmed with all the information.
+  A resource that includes beginner swaps (e.g. using a reusable water bottle or grocery bag) and tips to guide experienced and/or novice users on their journey would be beneficial.
 
 - **Incorporate a feedback link:**
-  Allows the user to input their opinions about the application. This allows for the continual improvement of the application.
+  Allows the user to input their opinions about the application. This allows for the continual improvement of the application and a better user experience.
 
 - **No results found for a search:**
-  There are many products in a household and it is difficult to compile them all into the application. By adding a feature where I can see what items are not returning results, I can add that particular item into the data model for future users who want to search for that same item.
+  There are many products in a household and it is difficult to compile them all into the application. By adding a feature where I can see what items are not returning results, I can add that particular item and its alternatives into the data for future users who want to search for that same item.
+
+- **Seed my data to the local database rather than the production database (MongoAtlas):**

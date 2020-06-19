@@ -9,16 +9,14 @@
 <form id="search-swaps" method="GET" action="/alternatives">
   <div class="input-item">
     <input name="q" type="text" placeholder="Search for eco-friendly alternatives" autocomplete="off" />
-    <!-- Placeholder=What you see in the input box before you enter anything -->
+
     <div class="search-button">
       <button type="submit" id="searchBtn" class="btn white-text">Search</button>
-      <!-- type="submit" allows you to search by pressing enter or clicking search button ---- type="button" works only when search button is pressed -->
     </div>
   </div>
 </form>
 
 <% if (didSearch) { %>
-<!-- start searched item -->
 <% if (item) { %>
 <h3>Item: <%= item.houseItem %></h3>
 
@@ -45,12 +43,8 @@
 <% } else { %>
 <h3>No Item Found</h3>
 <% } %>
-<!-- end searched item-->
 <% } else {%>
-<!-- start did not search -->
 <h3>Search for Item</h3>
-<!-- end did not search -->
 <% } %>
 
 <%- include('./partials/footer') %>
-<!-- one dot: same file VS 2 dots: goes up a level in directory-->

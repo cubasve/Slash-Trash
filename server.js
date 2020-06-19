@@ -7,30 +7,17 @@ const passport = require("passport");
 const logger = require("morgan");
 const methodOverride = require('method-override');
 
-
-// load the env vars
 require("dotenv").config();
 
 const app = express();
 
-// connect to the MongoDB with mongoose
 require("./config/database");
 require("./config/passport");
 
-//Require routess
-const indexRouter = require("./routes/index"); //main page
-const alternativesRouter = require("./routes/alternatives"); //search for alternatives (ex. /search)
-const userSwapsRouter = require("./routes/user"); //user adds the item (ex. /add)
+const indexRouter = require("./routes/index");
+const alternativesRouter = require("./routes/alternatives");
+const userSwapsRouter = require("./routes/user");
 
-//Step 1: Make a router for page
-//Step 2: Add router to middleware!!
-//Step 3: What is the route? HTTP verb : Path
-//Step 4: User interface (a href or button)
-//Step 5: Routes
-//Step 6: Controllers
-//Step 7: Views
-
-// view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
@@ -50,16 +37,14 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(methodOverride('_method'));
 
-// makes user available in all EJS views
 app.use(function (req, res, next) {
   res.locals.user = req.user;
   next();
 });
 
-//mount all routes with appropriate base paths
-app.use("/", indexRouter); //main page
-app.use("/alternatives", alternativesRouter); //search item
-app.use("/swaps", userSwapsRouter); //add item
+app.use("/", indexRouter);
+app.use("/alternatives", alternativesRouter);
+app.use("/swaps", userSwapsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

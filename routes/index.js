@@ -28,9 +28,4 @@ router.get("/logout", function (req, res) {
   res.redirect("/alternatives");
 });
 
-//redirect to /alternatives page to search for swaps
-
-// router.post('/items', itemCtrl.seed); //not sure about path
-// router.get('/success', itemCtrl.seedSuccess);
-
 module.exports = router;

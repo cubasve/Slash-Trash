@@ -8,7 +8,6 @@ function isLoggedIn(req, res, next) {
   res.redirect("/auth/google");
 }
 
-//search for alternatives:
 router.get("/", alternativesCtrl.index);
 
 module.exports = router;

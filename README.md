@@ -17,6 +17,12 @@ Why should we avoid plastic?
 
 ## Screenshots of Application:
 
+![image](https://user-images.githubusercontent.com/62129720/85089614-13ef5080-b1b1-11ea-98b8-afaff12506ed.png)
+
+![image](https://user-images.githubusercontent.com/62129720/85089585-033eda80-b1b1-11ea-915d-e4d98b53894c.png)
+
+![image](https://user-images.githubusercontent.com/62129720/85089528-dab6e080-b1b0-11ea-97c5-b1577233c4e9.png)
+
 ## Technologies Used:
 
 - MongoDB

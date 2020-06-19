@@ -13,7 +13,7 @@ async function index(req, res) {
     try {
       const regEx = new RegExp(`.*${req.query.q}.*`, "i");
       didSearch = true;
-      item = await Item.findOne({ houseItem: regEx }).populate("alternatives"); /
+      item = await Item.findOne({ houseItem: regEx }).populate("alternatives");
     } catch (err) {
       console.error(err);
     }

@@ -4,7 +4,6 @@ const User = require('../models/user');
 
 module.exports = {
 	listSwap,
-	showSwap,
 	createSwap,
 	deleteSwap,
 };

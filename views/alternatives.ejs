@@ -1,8 +1,10 @@
 <%- include('./partials/header') %>
 <br>
+<% if (user) { %>
 <form action="/swaps" method="GET">
   <button type="submit" class="btn white-text">See your swap list</button>
 </form>
+<% } %>
 
 <br>
 

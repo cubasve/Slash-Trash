@@ -56,16 +56,6 @@ function deleteSwap(req, res) {
 	});
 }
 
-// function deleteSwap(req, res) {
-// 	// parent.children.pull(_id);
-// 	req.user.swapsForUser.pull(req.params.id);
-// 	req.user.swapsForUser.remove();
-// 	// req.user.swapsForUser = null;
-// 	req.user.save(function (err) {
-// 		res.direct('/swaps');
-// 	});
-// }
-
 // Equivalent to `parent.children.pull(_id)`
 // parent.children.id(_id).remove();
 // Equivalent to `parent.child = null`

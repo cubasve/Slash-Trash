@@ -50,4 +50,4 @@ https://slash-trash.herokuapp.com/
 - **No results found for a search:**
   There are many products in a household and it is difficult to compile them all into the application. By adding a feature where I can see what items are not returning results, I can add that particular item and its alternatives into the data for future users who want to search for that same item.
 
-- **Seed my data to the local database rather than the production database (MongoAtlas):**
+- **Seed my data to the local database rather than the production database (MongoAtlas)**

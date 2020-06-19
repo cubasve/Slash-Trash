@@ -32,13 +32,13 @@ M:M:
 NOTES:
 - Household item: category(string) --> ex. living room, bathroom, kitchen, etc.
 - Alternative: content (array) --> want to provide multiple options to user
-- Alternative: cost (number) --> min 0, max 9999
+- Alternative: description (why is the alternative the better option?)
 - Alternative: include timestamp: true --> keeps track of date alternative was created
 
 <-------WIREFRAMES LIST--------->
 Contains wireframes for the app's main pages of functionality (e.g. Landing page, Posts Index Page, Fave Posts Page, Add Post Page, etc.)
-- LANDING PAGE: title with background image
-- LIST OF ITEMS SWAPPED: Doll house and a textbox beside it --> includes update & delete buttons
+- LANDING PAGE: 
+- LIST OF ITEMS SWAPPED: 
 - ADD ITEM PAGE: 
 
 LANDING PAGE: title with background image
@@ -62,12 +62,6 @@ DELETE ALTERNATIVE:
 4. Controllers:
 5. Views: 
 
-UPDATE ALTERNATIVE:
-1. RESTful Route: PUT /swaps/:id
-2. Add UI:
-3. Router: 
-4. Controllers:
-5. Views: 
 
 SEARCH FOR 1 ALTERNATIVE:
 1. RESTful Route: GET /swaps/:id

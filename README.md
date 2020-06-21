@@ -38,14 +38,14 @@ https://slash-trash.herokuapp.com/
 
 - **User Stories:**
 | As a Visitor: | As an Authenticated User:|
-| ----------  | ------------ |
-| - AAV, I want to search for eco-friendly household alternatives  | - AAS, I want to add and delete alternatives |
+----------  | ------------
+- AAV, I want to search for eco-friendly household alternatives  | - AAS, I want to add and delete alternatives
 
 - **Wireframes List:**
 | Search Alternatives Page: | User's Swaps List Page:|
-| ----------  | ------------ |
-| 1. Search for swaps  | 1. Able to see all chosen swaps |
-| 2. Add selected swap to personal list| 2. Delete unwanted swaps|
+----------  | ------------
+ 1. Search for swaps  | 1. Able to see all chosen swaps
+ 2. Add selected swap to personal list| 2. Delete unwanted swaps
 
 ## Next Steps: Planned Future Enhancements
 

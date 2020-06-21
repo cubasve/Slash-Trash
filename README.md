@@ -68,6 +68,13 @@ https://slash-trash.herokuapp.com/
   There are many products in a household and it is difficult to compile them all into the application. By adding a feature where I can see what items are not returning results, I can add that particular item and its alternatives into the data for future users who want to search for that same item.
 
 - **Incorporate a swaps dictionary:**
-  Not all user will want to search for swaps using the search bar. Some will want a list of them in alphabetical order to look up. Adding a sorting functionality that filters them by household area (ex. bathroom, kitchen) would be great.
+  Not all users will want to search for swaps using the search bar. Some will want a list of them in alphabetical order to look up. Adding a sorting functionality that filters them by household area (ex. bathroom, kitchen) would be great.
+
+- **User can like/comment on their individual swaps:**
+  Did it work for them? Is it better than the conventional household item? Is the user saving money because of the swap?
+  With the original user's consent, their likes and comments on their alternatives can be visible on the search alternatives page. This will be a useful resource to other users interested in that particular alternative.
+
+- **User can add their own swaps:**
+Not every user will want to search for swaps. Users may want to manually add their own and that should be an available option for them to do. 
 
 - **Seed my data to the local database rather than the production database (MongoAtlas)**

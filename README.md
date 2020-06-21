@@ -40,7 +40,7 @@ https://slash-trash.herokuapp.com/
 
 | As a Visitor: | As an Authenticated User: |
 | -----  | ------ |
-| AAV, I want to search for eco-friendly household alternatives  | AAS, I want to add and delete alternatives |
+| AAV, I want to search for eco-friendly household alternatives  | AAS, I want to add and delete alternatives on my personal list |
 
 - **Wireframes List:**
 

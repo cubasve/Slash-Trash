@@ -38,9 +38,9 @@ https://slash-trash.herokuapp.com/
 
 - **User Stories:**
 | As a Visitor:                                                  | As an Authenticated User:|
----------------------------------------------------------------   -----------------------------
-- AAV, I want to search for eco-friendly household alternatives   - AAS, I want to add alternatives
-                                                                  - AAS, I want to delete an alternative
+---------------------------------------------------------------  | -----------------------------
+- AAV, I want to search for eco-friendly household alternatives  | - AAS, I want to add alternatives
+                                                                 | - AAS, I want to delete an alternative
 
 
 

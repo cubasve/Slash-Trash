@@ -32,6 +32,20 @@ Why should we avoid plastic?
 ## Getting Started:
 https://slash-trash.herokuapp.com/
 
+### Planning:
+- **Entity Relationship Diagram (ERD):**
+![image](https://user-images.githubusercontent.com/62129720/85229184-71a0ba00-b3b6-11ea-8f49-e0d766933118.png)
+
+- **User Stories:**
+| As a Visitor:                                                  | As an Authenticated User:|
+---------------------------------------------------------------   -----------------------------
+- AAV, I want to search for eco-friendly household alternatives   - AAS, I want to add alternatives
+                                                                  - AAS, I want to delete an alternative
+
+
+
+- **Wireframes List:**
+
 ## Next Steps: Planned Future Enhancements
 
 - **Additional Items and Alternatives:**
@@ -49,5 +63,8 @@ https://slash-trash.herokuapp.com/
 
 - **No results found for a search:**
   There are many products in a household and it is difficult to compile them all into the application. By adding a feature where I can see what items are not returning results, I can add that particular item and its alternatives into the data for future users who want to search for that same item.
+
+- **Incorporate a swaps dictionary:**
+  Not all user will want to search for swaps using the search bar. Some will want a list of them in alphabetical order to look up. Adding a sorting functionality that filters them by household area (ex. bathroom, kitchen) would be great.
 
 - **Seed my data to the local database rather than the production database (MongoAtlas)**

@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const passport = require("passport");
 const logger = require("morgan");
-const methodOverride = require('method-override');
+const methodOverride = require("method-override");
 
 require("dotenv").config();
 
@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(
   session({
-    secret: "Lacieniga",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
   })
@@ -35,7 +35,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, "public")));
-app.use(methodOverride('_method'));
+app.use(methodOverride("_method"));
 
 app.use(function (req, res, next) {
   res.locals.user = req.user;

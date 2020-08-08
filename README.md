@@ -30,24 +30,8 @@ Why should we avoid plastic?
 - Node
 
 ## Getting Started:
-https://slash-trash.herokuapp.com/
-
-### Planning:
-- **Entity Relationship Diagram (ERD):**
-![image](https://user-images.githubusercontent.com/62129720/85229184-71a0ba00-b3b6-11ea-8f49-e0d766933118.png)
-
-- **User Stories:**
-
-| As a Visitor: | As an Authenticated User: |
-| -----  | ------ |
-| AAV, I want to search for eco-friendly household alternatives  | AAS, I want to add and delete alternatives on my personal list |
-
-- **Wireframes List:**
-
-| Search Alternatives Page: | User's Swaps List Page: |
-| ------  | ------ |
-| 1. Search for swaps  | 1. Able to see all chosen swaps |
-| 2. Add selected swap to personal list| 2. Delete unwanted swaps |
+- Application: https://slash-trash.herokuapp.com/
+- Trello Board: https://trello.com/b/2tJUtEBe/slash-trash
 
 ## Next Steps: Planned Future Enhancements
 
@@ -77,4 +61,3 @@ https://slash-trash.herokuapp.com/
 - **User can add their own swaps:**
 Not every user will want to search for swaps. Users may want to manually add their own and that should be an available option for them to do. 
 
-- **Seed my data to the local database rather than the production database (MongoAtlas)**

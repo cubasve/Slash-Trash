@@ -6,11 +6,16 @@ const userSwapSchema = new Schema({
   alternative: { type: Schema.Types.ObjectId, ref: "Alternative" },
 });
 
+const userCommentSchema = new Schema({
+  comment: String,
+});
+
 const userSchema = new Schema({
   name: String,
   email: String,
   googleId: String,
   swapsForUser: [userSwapSchema],
+  comment: [userCommentSchema],
 });
 
 module.exports = mongoose.model("User", userSchema);

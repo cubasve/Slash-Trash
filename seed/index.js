@@ -6,13 +6,13 @@ const alternatives = require('./alternatives');
 
 // uncomment if you want to get database url from .env file
 // ----------------------
-// require('dotenv').config()
-// const databaseURL = process.env.DATABASE_URL
+require('dotenv').config()
+const databaseURL = process.env.DATABASE_URL
 
 // use this if you just want to hardcode database url
 // make sure you don't accidently add your production DB URL here and commit it!!
 // comment this out if you use the .env setup
-const databaseURL = 'mongodb://localhost/slashtrashdb';
+//const databaseURL = 'mongodb://localhost/slashtrashdb';
 
 // connect to db
 mongoose.connect(databaseURL, {

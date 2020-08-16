@@ -21,6 +21,7 @@
 <% if (didSearch) { %>
 <% if (item) { %>
 <h3>Item: <%= item.houseItem %></h3>
+<h4>Problem: <%= item.problem %></h4>
 
 <section id="alternatives-list">
   <% item.alternatives.forEach(function (a){ %>
@@ -37,6 +38,9 @@
     </div>
     <div class="swap-description">
       <h5><%= a.description %></h5>
+    </div>
+    <div class="swap-image">
+      <h5><%= a.image%></h5>
     </div>
   </div>
   <% }) %>

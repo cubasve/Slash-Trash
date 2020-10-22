@@ -9,6 +9,27 @@
 <h3><%= user.name %>'s Swaps</h3>
 
 <% if (user.swapsForUser.length > 0) { %>
+
+<% user.swapsForUser.forEach(function (swap) { %>
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card">
+
+      <div class="card-image">
+        <img src="../img/castIron.jpeg">
+        <span class="card-title">Item: <%= swap.item.houseItem %></span>
+        <span class="card-title">Alternative: <%= swap.alternative.swap %></span>
+        <form action="/swaps/<%= swap.id %>?_method=DELETE" class="delete-form" method="POST">
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">delete</i></a>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<% }) %>
+
+
 <table>
   <thead>
     <tr>

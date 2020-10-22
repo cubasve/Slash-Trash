@@ -27,8 +27,20 @@
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo left">Slash Trash</a>
+      <!-- <ul>
+        <li>
+          <% if (user) { %>
+          <a href="/swaps">My Swaps</a>
+          <% } %>
+        </li>
+      </ul> -->
 
-      <ul class=" right">
+      <!-- <% if (user) { %> <form action="/swaps" method="GET">
+        <button type="submit" class="btn white-text">My Swaps</button>
+      </form>
+      <% } %> -->
+
+      <ul class="right">
         <li>
           <% if (user) { %>
           <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>

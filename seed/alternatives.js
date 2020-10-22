@@ -6,7 +6,7 @@ module.exports = [
     swap: 'Cast Iron',
     description:
       'Non-stick pans have a layer of teflon that is gradually removed with use and leaches into the food. Cast iron can be used in the stovetop or oven and will last you a lifetime.',
-    image: '',
+    image: '../images/castIron.png',
   },
   {
     swap: 'Stainless Steel',

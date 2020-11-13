@@ -18,6 +18,8 @@
   </div>
 </form>
 
+<% if(didSearch) { %>
+
 <% if (item) { %>
 
 <h3>Item: <%= item.houseItem %></h3>
@@ -29,7 +31,7 @@
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="<%= a.image %>">
-      <!-- <img src="../img/castIron.jpeg"> -->
+      <img src="../img/castIron.jpeg">
     </div>
 
     <div class=" card-content">
@@ -56,6 +58,10 @@
 
 <% } else { %>
 <h3>No Item Found</h3>
+<% } %>
+
+<% } else { %>
+<h3>Search for Item</h3>
 <% } %>
 
 <%- include('./partials/footer') %>

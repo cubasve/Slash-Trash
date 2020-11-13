@@ -4,14 +4,42 @@
 module.exports = [
   {
     houseItem: 'Pan',
-    problem: '',
+    problem: 'Non-stick pans have a layer of teflon that is gradually removed with use and leaches into the food',
     category: 'Kitchen',
     image: '',
     alternatives: ['Cast Iron', 'Stainless Steel', 'Enameled Cast Iron'],
   },
   {
     houseItem: 'Shampoo',
-    problem: '',
+    problem: 'Bottles are used up every few months and are likely not recycled because it is more expensive to recycle used plastic.',
+    category: 'Bathroom',
+    image: '',
+    alternatives: ['Refill', 'Bar', 'Buy in Bulk', 'Terracycle Program'],
+  },
+  {
+    houseItem: 'Conditioner',
+    problem: 'Bottles are used up every few months and are likely not recycled because it is more expensive to recycle used plastic.',
+    category: 'Bathroom',
+    image: '',
+    alternatives: ['Refill', 'Bar', 'Buy in Bulk', 'Terracycle Program'],
+  },
+  {
+    houseItem: 'Body Wash',
+    problem: 'Bottles are used up every few months and are likely not recycled because it is more expensive to recycle used plastic.',
+    category: 'Bathroom',
+    image: '',
+    alternatives: ['Refill', 'Bar', 'Buy in Bulk', 'Terracycle Program'],
+  },
+  {
+    houseItem: 'Dish Soap',
+    problem: 'Bottles are used up every few months and are likely not recycled because it is more expensive to recycle used plastic.',
+    category: 'Bathroom',
+    image: '',
+    alternatives: ['Refill', 'Bar', 'Buy in Bulk', 'Terracycle Program'],
+  },
+  {
+    houseItem: 'Lotion/Cream/Moisturizer',
+    problem: 'Bottles are used up every few months and are likely not recycled because it is more expensive to recycle used plastic.',
     category: 'Bathroom',
     image: '',
     alternatives: ['Refill', 'Bar', 'Buy in Bulk', 'Terracycle Program'],
@@ -35,18 +63,18 @@ module.exports = [
     problem: 'Disposable razors have a lifespan of about 3 months, and then they are discarded to end up in landfills.',
     category: 'Bathroom',
     image: '',
-    alternatives: ['Stainless steel', 'Sugaring', 'Thread', 'Terracycle Program'],
+    alternatives: ['Reusable Razor', 'Sugaring', 'Thread', 'Terracycle Program'],
   },
   {
     houseItem: 'Period/Tampons/Pads',
-    problem: 'They are single-use items that ',
+    problem: 'Disposable menstrual products are single-use items that contribute to our landfills.',
     category: 'Bathroom',
     image: '',
     alternatives: ['Menstrual cup', 'Cotton tampon', 'Reusable pad', 'Period underwear']
   },
   {
     houseItem: 'Gift wrap',
-    problem: 'It is thrown away after a gift is opened',
+    problem: 'Gift wrap is thrown away after a gift is opened and is often not recycleable since it has a coating of plastic.',
     category: 'Holidays',
     image: '',
     alternatives: ['Furoshiki', 'Box', 'Paper wrapping', 'A gift in a gift']

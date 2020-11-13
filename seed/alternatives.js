@@ -5,14 +5,14 @@ module.exports = [
   {
     swap: 'Cast Iron',
     description:
-      'Non-stick pans have a layer of teflon that is gradually removed with use and leaches into the food. Cast iron can be used in the stovetop or oven and will last you a lifetime.',
+      'Cast iron can be used in the stovetop or oven and will last you a lifetime.',
     image: '/img/castIron/jpeg',
   },
   {
     swap: 'Stainless Steel',
     description:
       'Stainless steel is a high-value material. There is a high chance it will be recycled and reused.',
-    image: '',
+    image: '/img/stainlessSteel/jpeg',
   },
   {
     swap: 'Enameled Cast Iron',
@@ -24,7 +24,7 @@ module.exports = [
     swap: 'Refill',
     description:
       'Bring your own container to refill at stores or buy pre-packaged in a glass jar where you can return it.',
-    image: '',
+    image: '/img/refill.jpg',
   },
   {
     swap: 'Bar',
@@ -34,7 +34,7 @@ module.exports = [
   {
     swap: 'Buy in Bulk',
     description: 'Buying in larger sizes reduces the amount of packaging',
-    image: '',
+    image: 'img/bulk/jpeg',
   },
   {
     swap: 'Terracycle Program',
@@ -44,18 +44,18 @@ module.exports = [
   {
     swap: 'Second-Hand',
     description: 'Thrift shops, Hand-me downs, cosignment shops, etc.',
-    image: '',
+    image: '/img/secondHand.jpeg',
   },
   {
     swap: 'Natural Fabrics',
     description:
       'Avoid synthetic fabrics (e.g. polyester, acrylic, nylon). Choose cotton, linen, wool, cashmere, silk, hemp, bamboo, leather.',
-    image: '',
+    image: '/img/naturalFabrics.jpeg',
   },
   {
     swap: 'Repair',
     description: 'Mend, darn, felt, hem, or patch up the piece of fabric instead of discarding it.',
-    image: '',
+    image: '/img/repair.jpeg',
   },
   {
     swap: 'Borrow',
@@ -72,6 +72,11 @@ module.exports = [
     description:
       'Stainless steel is a high-value material. There is a high chance it will be recycled and reused.',
     image: '',
+  },
+  {
+    swap: 'Reusable Razor',
+    description: 'The stainless steel unit can last a lifetime. The disposable metal blades just need to be replaced.',
+    image: '/img/reusableRazor/jpeg',
   },
   {
     swap: 'Sugaring',

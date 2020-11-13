@@ -18,7 +18,7 @@ module.exports = [
     swap: 'Enameled Cast Iron',
     description:
       'Cast iron must be seasoned/oiled so it remains non-stick. Enameled cast iron is a lower-maintenance option.',
-    image: '',
+    image: '/img/enameledCastIron/jpeg',
   },
   {
     swap: 'Refill',
@@ -29,7 +29,7 @@ module.exports = [
   {
     swap: 'Bar',
     description: 'Package-free, solid bar',
-    image: '',
+    image: '/img/barSoap/jpeg',
   },
   {
     swap: 'Buy in Bulk',
@@ -39,11 +39,11 @@ module.exports = [
   {
     swap: 'Terracycle Program',
     description: 'Provides programs for consumers to dispose of their waste responsibly.',
-    image: '',
+    image: '/img/terracycle.png',
   },
   {
     swap: 'Second-Hand',
-    description: 'Thrift shops, Hand-me downs, etc.',
+    description: 'Thrift shops, Hand-me downs, cosignment shops, etc.',
     image: '',
   },
   {
@@ -65,7 +65,7 @@ module.exports = [
   {
     swap: 'Wooden Pencil',
     description: 'Wood is compostable.',
-    image: '',
+    image: '/img/woodenPencil/jpeg',
   },
   {
     swap: 'Stainless Steel Mechanical Pencil',
@@ -76,47 +76,47 @@ module.exports = [
   {
     swap: 'Sugaring',
     description: 'Made up of sugar, lemon, and water. It dissolves in water and/or can be composted.',
-    image: '',
+    image: '/img/sugaring/jpeg',
   },
   {
     swap: 'Thread',
     description: 'Use a piece of thread to remove hair. Especially good for facial hair since it\'s gentler.',
-    image: '',
+    image: '/img/threading/jpeg',
   },
   {
     swap: 'Menstrual cup',
     description: 'There is a learning curve with this product. Here is a quiz to find the right cup for you: https://putacupinit.com/the-menstrual-cup-quiz-v2/',
-    image: '',
+    image: '/img/menstrualCup/jpeg',
   },
   {
     swap: 'Cotton tampon',
     description: 'Ensure that it is 100% cotton and the applicator is made out of paper.',
-    image: '',
+    image: '/img/cottonTampon/jpeg',
   },
   {
     swap: 'Reusable pad',
     description: 'Works just like a disposable pad, but requires cleaning to be reused.',
-    image: '',
+    image: '/img/reusablePad/jpeg',
   },
   {
     swap: 'Period underwear',
     description: 'Has extra padding in the fabric for period use.',
-    image: '',
+    image: '/img/periodUnderwear/jpeg',
   },
   {
     swap: 'Furoshiki',
     description: 'It is a Japanese fabric wrapping. There are many techniques that can be used to wrap a gift using a piece of cloth.',
-    image: '',
+    image: '/img/furoshiki/jpeg',
   },
   {
     swap: 'Paper wrapping',
-    description: 'Wrap the gift in newspaper, a paper bag, etc.',
-    image: ''
+    description: 'Wrap the gift in newspaper, brown paper, etc.',
+    image: '/img/paperWrapping/jpeg'
   },
   {
-    swap: 'Box',
-    description: 'Use a mason jar, a cardboard box to enclose the gift.',
-    image: ''
+    swap: 'Container',
+    description: 'Use a mason jar, a cardboard box, a paper bag to enclose the gift.',
+    image: '/img/container/jpeg'
   },
   {
     swap: 'A gift in a gift',

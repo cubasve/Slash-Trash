@@ -19,7 +19,7 @@ a {
   justify-content: space-evenly;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   #alternatives-list {
     background-color: tomato;
     display: flex;
@@ -38,7 +38,7 @@ a {
   }
 } */
 
-@media (min-width: 350px) {
+@media (max-width: 350px) {
   #alternatives-list {
     background-color: tomato;
     display: flex;

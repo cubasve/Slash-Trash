@@ -63,7 +63,7 @@ module.exports = [
     problem: 'Disposable razors have a lifespan of about 3 months, and then they are discarded to end up in landfills.',
     category: 'Bathroom',
     image: '',
-    alternatives: ['Reusable Razor', 'Sugaring', 'Thread', 'Terracycle Program'],
+    alternatives: ['Reusable Razor', 'Sugaring', 'Thread', 'Terracycle Program', 'Laser hair removal', 'Tweezers', 'Electric shaver/Epilator'],
   },
   {
     houseItem: 'Period/Tampons/Pads',
@@ -78,5 +78,26 @@ module.exports = [
     category: 'Holidays',
     image: '',
     alternatives: ['Furoshiki', 'Box', 'Paper wrapping', 'A gift in a gift']
-  }
+  },
+  {
+    houseItem: 'Eyes',
+    problem: '',
+    category: 'Bathroom',
+    image: '',
+    alternatives: ['Laser Eye Surgery', 'Glasses', 'Contact lenses']
+  },
+  {
+    houseItem: 'Cosmetics/Makeup',
+    problem: '',
+    category: 'Bathroom',
+    image: '',
+    alternatives: ['Cosmetic Brands', 'Packaging']
+  },
+  {
+    houseItem: 'Gift/Present',
+    problem: '',
+    category: 'Holidays',
+    image: '',
+    alternatives: ['Experiences', 'Your time', 'Services', 'Digital gifts', 'Edibles', 'Cash', 'Household goods']
+  },
 ];

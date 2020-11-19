@@ -91,8 +91,23 @@ module.exports = [
     image: './images/threading.jpeg',
   },
   {
+    swap: 'Laser hair removal',
+    description: 'Remove unwanted body hair using laser hair removal. It is expensive, but eliminates hair permanently.',
+    image: '',
+  },
+  {
+    swap: 'Tweezers',
+    description: 'It is time-consuming across large areas of the body. It is useful in small areas, such as the face.',
+    image: '',
+  },
+  {
+    swap: 'Electric shaver/Epilator',
+    description: 'Machine-operated devices to remove hair.',
+    image: '',
+  },
+  {
     swap: 'Menstrual cup',
-    description: 'There is a learning curve with this product. Here is a quiz to find the right cup for you: https://putacupinit.com/the-menstrual-cup-quiz-v2/',
+    description: 'There is a bigger upfront cost and a learning curve with this product. Here is a quiz to find the right cup for you: https://putacupinit.com/the-menstrual-cup-quiz-v2/',
     image: './images/menstrualCup.jpeg',
   },
   {
@@ -112,7 +127,7 @@ module.exports = [
   },
   {
     swap: 'Furoshiki',
-    description: 'It is a Japanese fabric wrapping. There are many techniques that can be used to wrap a gift using a piece of cloth.',
+    description: 'It is Japanese fabric wrapping. There are many techniques that can be used to wrap a gift using a piece of cloth.',
     image: './images/furoshiki.jpeg',
   },
   {
@@ -122,13 +137,74 @@ module.exports = [
   },
   {
     swap: 'Container',
-    description: 'Use a mason jar, a cardboard box, a paper bag to enclose the gift.',
+    description: 'Reuse what you already have (ex. unused wrapping paper, paper from recycling bin, shipping materials, unused jar/box) to enclose the gift.',
     image: './images/container.jpeg'
   },
   {
     swap: 'A gift in a gift',
-    description: 'Use a second gift as your wrapping paper. E.g. Blanket, scarf, clothing, etc.',
+    description: 'A gift wrapped in another gift. Use a second gift as your wrapping paper. E.g. Blanket, scarf, clothing, etc.',
     image: ''
-  }
+  },
+  {
+    swap: 'Laser Eye Surgery',
+    description: 'Only nearsighted individuals can get their eyes lasered. ',
+    image: ''
+  },
+  {
+    swap: 'Glasses',
+    description: 'The most reusable option.',
+    image: ''
+  },
+  {
+    swap: 'Contact Lenses',
+    description: 'Terracycle accepts the packaging of lenses and cleaning solutions.',
+    image: ''
+  },
+  {
+    swap: 'Cosmetic Brands',
+    description: 'Low waste makeup brands include: RMS, Kjaer Weis, Elate Cosmetics, ILIA, Besame, Clean Faced Cosmetics, Fat and the Moon, etc. They tend to be at a premium cost.',
+    image: ''
+  },
+  {
+    swap: 'Packaging',
+    description: 'Be selective about the product packaging. Choose paper, metal packaging and minimal plastic packaging.',
+    image: ''
+  },
+  {
+    swap: 'Experiences',
+    description: 'Ex. Workshop/classes, theatre/play/museum, theme park, etc.',
+    image: ''
+  },
+  {
+    swap: 'Your time',
+    description: 'Ex. A visit from you, professional expertise (consultation, plumbing, etc.)',
+    image: ''
+  },
+  {
+    swap: 'Services',
+    description: 'Ex. Facial, massage, gym membership, etc.',
+    image: ''
+  },
+  {
+    swap: 'Digital gifts',
+    description: 'Ex. Subscriptions to video streaming, e-books, iTunes, cloud file storage, etc.',
+    image: ''
+  },
+  {
+    swap: 'Edibles',
+    description: 'Ex. homemade/store-bought cookies, jam, honey, maple syrup, etc.',
+    image: ''
+  },
+  {
+    swap: 'Cash',
+    description: 'Some people like to choose their own present.',
+    image: ''
+  },
+  {
+    swap: 'Household goods',
+    description: 'Ex. Candles, beauty products (soap, scrub, balm, clay mask, lotion), plants',
+    image: ''
+  },
 ];
+
 

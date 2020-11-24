@@ -1,8 +1,6 @@
 // this seed file assumes the "swap" property is unique across alternative
 // the "swap" property is going to be used to find the alternatives when creating the items
 
-// const castIron = require('./images/castIron.jpeg');
-
 module.exports = [
   {
     swap: 'Cast Iron',
@@ -14,50 +12,50 @@ module.exports = [
     swap: 'Stainless Steel',
     description:
       'Stainless steel is a high-value material. There is a high chance it will be recycled and reused.',
-    image: './images/stainlessSteel.jpeg',
+    image: '../public/images/stainlessSteel.jpeg',
   },
   {
     swap: 'Enameled Cast Iron',
     description:
       'Cast iron must be seasoned/oiled so it remains non-stick. Enameled cast iron is a lower-maintenance option.',
-    image: './images/enameledCastIron.jpeg',
+    image: '../public/images/enameledCastIron.jpeg',
   },
   {
     swap: 'Refill',
     description:
       'Bring your own container to refill at stores or buy pre-packaged in a glass jar where you can return it.',
-    image: './images/refill.jpg',
+    image: '../public/images/refill.jpg',
   },
   {
     swap: 'Bar',
     description: 'Package-free, solid bar',
-    image: './images/barSoap.jpeg',
+    image: '../public/images/barSoap.jpeg',
   },
   {
     swap: 'Buy in Bulk',
     description: 'Buying in larger sizes reduces the amount of packaging',
-    image: './images/bulk.jpeg',
+    image: '../public/images/bulk.jpeg',
   },
   {
     swap: 'Terracycle Program',
     description: 'Provides programs for consumers to dispose of their waste responsibly.',
-    image: './images/terracycle.png',
+    image: '../public/images/terracycle.png',
   },
   {
     swap: 'Second-Hand',
     description: 'Thrift shops, Hand-me downs, cosignment shops, etc.',
-    image: './images/secondHand.jpeg',
+    image: '../public/images/secondHand.jpeg',
   },
   {
     swap: 'Natural Fabrics',
     description:
       'Avoid synthetic fabrics (e.g. polyester, acrylic, nylon). Choose cotton, linen, wool, cashmere, silk, hemp, bamboo, leather.',
-    image: './images/naturalFabrics.jpeg',
+    image: '../public/images/naturalFabrics.jpeg',
   },
   {
     swap: 'Repair',
     description: 'Mend, darn, felt, hem, or patch up the piece of fabric instead of discarding it.',
-    image: './images/repair.jpeg',
+    image: '../public/images/repair.jpeg',
   },
   {
     swap: 'Borrow',
@@ -67,7 +65,7 @@ module.exports = [
   {
     swap: 'Wooden Pencil',
     description: 'Wood is compostable.',
-    image: './images/woodenPencil.jpeg',
+    image: '../public/images/woodenPencil.jpeg',
   },
   {
     swap: 'Stainless Steel Mechanical Pencil',
@@ -78,17 +76,17 @@ module.exports = [
   {
     swap: 'Reusable Razor',
     description: 'The stainless steel unit can last a lifetime. The disposable metal blades just need to be replaced.',
-    image: './images/reusableRazor.jpeg',
+    image: '../public/images/reusableRazor.jpeg',
   },
   {
     swap: 'Sugaring',
     description: 'Made up of sugar, lemon, and water. It dissolves in water and/or can be composted.',
-    image: './images/sugaring.jpeg',
+    image: '../public/images/sugaring.jpeg',
   },
   {
     swap: 'Thread',
     description: 'Use a piece of thread to remove hair. Especially good for facial hair since it\'s gentler.',
-    image: './images/threading.jpeg',
+    image: '../public/images/threading.jpeg',
   },
   {
     swap: 'Laser hair removal',
@@ -108,37 +106,37 @@ module.exports = [
   {
     swap: 'Menstrual cup',
     description: 'There is a bigger upfront cost and a learning curve with this product. Here is a quiz to find the right cup for you: https://putacupinit.com/the-menstrual-cup-quiz-v2/',
-    image: './images/menstrualCup.jpeg',
+    image: '../public/images/menstrualCup.jpeg',
   },
   {
     swap: 'Cotton tampon',
     description: 'Ensure that it is 100% cotton and the applicator is made out of paper.',
-    image: './images/cottonTampon.jpeg',
+    image: '../public/images/cottonTampon.jpeg',
   },
   {
     swap: 'Reusable pad',
     description: 'Works just like a disposable pad, but requires cleaning to be reused.',
-    image: './images/reusablePad.jpeg',
+    image: '../public/images/reusablePad.jpeg',
   },
   {
     swap: 'Period underwear',
     description: 'Has extra padding in the fabric for period use.',
-    image: './images/periodUnderwear.jpeg',
+    image: '../public/images/periodUnderwear.jpeg',
   },
   {
     swap: 'Furoshiki',
     description: 'It is Japanese fabric wrapping. There are many techniques that can be used to wrap a gift using a piece of cloth.',
-    image: './images/furoshiki.jpeg',
+    image: '../public/images/furoshiki.jpeg',
   },
   {
     swap: 'Paper wrapping',
     description: 'Wrap the gift in newspaper, brown paper, etc.',
-    image: './images/paperWrapping.jpeg'
+    image: '../public/images/paperWrapping.jpeg'
   },
   {
     swap: 'Container',
     description: 'Reuse what you already have (ex. unused wrapping paper, paper from recycling bin, shipping materials, unused jar/box) to enclose the gift.',
-    image: './images/container.jpeg'
+    image: '../public/images/container.jpeg'
   },
   {
     swap: 'A gift in a gift',

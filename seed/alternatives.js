@@ -8,7 +8,7 @@ module.exports = [
     swap: 'Cast Iron',
     description:
       'Cast iron can be used in the stovetop or oven and will last you a lifetime.',
-    image: './images/castIron.jpeg',
+    image: 'https://i.ibb.co/XFd7Tkz/castIron.jpg',
   },
   {
     swap: 'Stainless Steel',

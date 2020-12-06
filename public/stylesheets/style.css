@@ -4,7 +4,7 @@ body {
 }
 
 .page-body {
-  padding: 50px;
+  padding: 30px;
 }
 
 a {
@@ -28,7 +28,7 @@ a {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1249px) {
   #alternatives-list {
     background-color: tomato;
     display: flex;
@@ -37,14 +37,29 @@ a {
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 699px) {
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
   #alternatives-list {
     background-color: tomato;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: space-evenly;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 601px) and (max-width: 999px) {
+  #alternatives-list {
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   #alternatives-list {
     background-color: tomato;
     display: flex;
@@ -60,9 +75,34 @@ a {
     flex-direction: column;
     align-items: center;
   }
-
   .card {
-  background-color: yellow;
-  width: 250px;
+    background-color: yellow;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  #alternatives-list {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    background-color: yellow;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  #alternatives-list {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    background-color: yellow;
+    width: 150px;
   }
 }

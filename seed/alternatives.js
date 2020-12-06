@@ -24,7 +24,7 @@ module.exports = [
     swap: 'Refill',
     description:
       'Bring your own container (BYOC) to refill at stores or buy the product pre-packaged in a glass jar where you initially pay a deposit for the jar and you can return it for a refund.',
-    image: 'https://i.ibb.co/ymjCFS8/refill.jpg',
+    image: 'https://i.ibb.co/7nsTTZy/refill2.jpg',
   },
   {
     swap: 'Bar',
@@ -50,7 +50,7 @@ module.exports = [
     swap: 'Natural Fabrics',
     description:
       'Avoid synthetic fabrics (e.g. polyester, acrylic, nylon). Choose natural fabrics, such as cotton, linen, wool, cashmere, silk, hemp, bamboo, and leather.',
-    image: 'https://i.ibb.co/wMQyLmk/natural-Fabrics.jpg',
+    image: 'https://i.ibb.co/4fssSvw/natural-Fabrics.jpg',
   },
   {
     swap: 'Repair',
@@ -126,77 +126,77 @@ module.exports = [
   {
     swap: 'Furoshiki',
     description: 'It is Japanese fabric wrapping. There are many techniques that can be used to wrap a gift using a piece of cloth.',
-    image: 'https://i.ibb.co/jGFyM79/furoshiki.jpg',
+    image: 'https://i.ibb.co/rwjwrcj/furoshiki2.jpg',
   },
   {
     swap: 'Container',
     description: 'Reuse what you already have (ex. unused wrapping paper, paper from recycling bin, shipping materials, unused jar/box) to enclose the gift.',
-    image: '../public/images/paperWrapping.jpeg'
+    image: 'https://i.ibb.co/K6wtLVL/container.jpg'
   },
   {
     swap: 'A gift in a gift',
     description: 'A gift wrapped in another gift. Use a second gift as your wrapping paper. E.g. Blanket, scarf, clothing, basket, etc.',
-    image: ''
+    image: 'https://i.ibb.co/FJxPfqK/gift-In-Gift.jpg'
   },
   {
     swap: 'Laser Eye Surgery',
     description: 'Only nearsighted individuals can get their eyes lasered.',
-    image: ''
+    image: 'https://i.ibb.co/GFXZK96/laser-Eye-Surgery.jpg'
   },
   {
     swap: 'Glasses',
     description: 'The most reusable option.',
-    image: ''
+    image: 'https://i.ibb.co/LZ6tNnx/glasses.jpg'
   },
   {
-    swap: 'Contact Lenses',
+    swap: 'Contact lenses',
     description: 'Terracycle accepts the packaging of lenses and cleaning solutions.',
-    image: ''
+    image: 'https://i.ibb.co/mv7vCnZ/contact-Lenses.jpg'
   },
   {
     swap: 'Cosmetic Brands',
     description: 'Low waste makeup brands prioritize minimalistic, recyclable and compostable packaging, however they tend to be at a premium cost. They include: RMS, Kjaer Weis, Elate Cosmetics, ILIA, Besame, Clean Faced Cosmetics, Fat and the Moon, etc. ',
-    image: ''
+    image: 'https://i.ibb.co/ZMdvpYG/makeup.png'
   },
   {
     swap: 'Packaging',
     description: 'Be selective about the product packaging. Choose paper, metal packaging and minimal plastic packaging.',
-    image: ''
+    image: 'https://i.ibb.co/r5YRjHH/packaging.jpg'
   },
   {
     swap: 'Experiences',
     description: 'Ex. Workshop/classes, theatre/play/concert/movie/museum, theme park/zoo, restaurant, etc.',
-    image: ''
+    image: 'https://i.ibb.co/D9s8h4c/experiences.jpg'
   },
   {
     swap: 'Your time',
     description: 'Ex. A visit from you, professional expertise (consultation, plumbing, etc.), babysitter, yard service, etc. ',
-    image: ''
+    image: 'https://i.ibb.co/4RFy64m/time.jpg'
   },
   {
     swap: 'Services',
     description: 'Ex. Facial, massage, gym membership, manicure/pedicure, etc.',
-    image: ''
+    image: 'https://i.ibb.co/hg9PGqy/services.jpg'
   },
   {
     swap: 'Digital gifts',
     description: 'Ex. Subscriptions to video streaming, e-books, iTunes, cloud file storage, etc.',
-    image: ''
+    image: 'https://i.ibb.co/9sc7Rfs/digital-Gifts.jpg'
   },
   {
     swap: 'Consumables',
     description: 'Ex. Homemade/store-bought cookies, jam, honey, maple syrup, chocolate, wine, local delicacies, etc.',
-    image: ''
+    image: 'https://i.ibb.co/6r5xy65/consumables.jpg'
   },
   {
     swap: 'Cash',
     description: 'Sometimes you don\'t know what a person wants so let them choose their own present. ',
-    image: ''
+    image: 'https://i.ibb.co/jLvDsnG/cash.png'
   },
   {
     swap: 'Household goods',
     description: 'Ex. Candles, beauty products (soap, scrub, balm, clay mask, lotion), plants, etc. ',
-    image: ''
+    image: 'https://i.ibb.co/YpD6jmf/household-Goods.jpg'
   },
 ];
 

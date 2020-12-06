@@ -42,7 +42,7 @@ module.exports = [
     houseItem: 'Clothing',
     problem: 'Textile waste is a cause of pollution and synthetic clothing sheds microplastics into waterways when washed.',
     category: 'Bedroom',
-    alternatives: ['Second-Hand', 'Natural Fabrics', 'Repair', 'Borrow'],
+    alternatives: ['Second-Hand', 'Natural Fabrics', 'Repair', 'Borrow/Rent'],
   },
   {
     houseItem: 'Pencil',
@@ -66,7 +66,7 @@ module.exports = [
     houseItem: 'Gift wrap',
     problem: 'Gift wrap is thrown away after a gift is opened and is often not recycleable since it has a coating of plastic.',
     category: 'Holidays',
-    alternatives: ['Furoshiki', 'Box', 'Paper wrapping', 'A gift in a gift']
+    alternatives: ['Furoshiki', 'Container', 'A gift in a gift']
   },
   {
     houseItem: 'Eyes',
@@ -78,12 +78,12 @@ module.exports = [
     houseItem: 'Cosmetics/Makeup',
     problem: '',
     category: 'Bathroom',
-    alternatives: ['Cosmetic Brands', 'Packaging']
+    alternatives: ['Cosmetic Brands', 'Packaging', 'Terracycle Program']
   },
   {
     houseItem: 'Gift/Present',
     problem: '',
     category: 'Holidays',
-    alternatives: ['Experiences', 'Your time', 'Services', 'Digital gifts', 'Edibles', 'Cash', 'Household goods']
+    alternatives: ['Experiences', 'Your time', 'Services', 'Digital gifts', 'Consumables', 'Cash', 'Household goods']
   },
 ];

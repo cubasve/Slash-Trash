@@ -1,5 +1,4 @@
 body {
-  /* padding: 50px; */
   font: 14px "Arial", Helvetica, Arial, sans-serif;
 }
 
@@ -65,6 +64,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .card {
+    background-color: yellow;
+    width: 250px;
   }
 }
 

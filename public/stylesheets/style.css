@@ -1,6 +1,10 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Arial", Helvetica, Arial, sans-serif;
+}
+
+.page-body {
+  padding: 50px;
 }
 
 a {
@@ -9,7 +13,7 @@ a {
 
 .card {
   background-color: yellow;
-  width: 350px;
+  width: 300px;
 }
 
 #alternatives-list {
@@ -19,7 +23,12 @@ a {
   justify-content: space-evenly;
 }
 
-@media (max-width: 1000px) {
+.activator {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
   #alternatives-list {
     background-color: tomato;
     display: flex;
@@ -28,20 +37,32 @@ a {
   }
 }
 
-/* @media (min-width: 400px) {
+@media only screen and (min-width: 501px) and (max-width: 699px) {
   #alternatives-list {
     background-color: tomato;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-} */
 
-@media (max-width: 350px) {
+  }
+}
+
+@media only screen and (max-width: 500px) {
   #alternatives-list {
     background-color: tomato;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #alternatives-list {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+  background-color: yellow;
+  width: 250px;
   }
 }

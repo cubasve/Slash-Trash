@@ -9,7 +9,23 @@
 <br>
 <div class="page-body">
 
-  <form id="search-swaps" method="GET" action="/alternatives">
+  <nav>
+    <div class="nav-wrapper">
+      <form id="search-swaps" method="GET" action="/alternatives">
+        <div class="input-field">
+
+          <input name="q" id="search" type="search" placeholder="Search for eco-friendly alternatives"
+            autocomplete="off">
+
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <!-- <form id="search-swaps" method="GET" action="/alternatives">
     <div class="input-item">
       <input name="q" type="text" placeholder="Search for eco-friendly alternatives" autocomplete="off" />
 
@@ -17,7 +33,7 @@
         <button type="submit" id="searchBtn" class="btn white-text">Search</button>
       </div>
     </div>
-  </form>
+  </form> -->
 
   <% if (didSearch) { %>
 
@@ -35,7 +51,7 @@
         <img class="activator" src="<%= a.image %>">
       </div>
 
-      <div class=" card-content">
+      <div class="card-content">
         <span class="card-title activator grey-text text-darken-4"><%= a.swap %><i class="material-icons right">
             more_vert</i></span>
         <% if (user) { %>

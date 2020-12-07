@@ -2,21 +2,20 @@ body {
   font: 14px "Arial", Helvetica, Arial, sans-serif;
 }
 
+.delete-forever {
+  font-size: 300px;
+}
+
 .page-body {
   padding: 30px;
 }
 
-a {
-  color: #00B7FF;
-}
-
 .card {
-  background-color: yellow;
-  width: 300px;
+  background-color: tan;
+  width: 280px;
 }
 
 #alternatives-list {
-  background-color: tomato;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -29,16 +28,16 @@ a {
 
 @media only screen and (min-width: 1249px) {
   #alternatives-list {
-    background-color: tomato;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
     justify-content: space-evenly;
   }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1250px) {
   #alternatives-list {
-    background-color: tomato;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -49,7 +48,6 @@ a {
 
 @media only screen and (min-width: 601px) and (max-width: 999px) {
   #alternatives-list {
-    background-color: tomato;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -60,52 +58,44 @@ a {
 
 @media only screen and (max-width: 600px) {
   #alternatives-list {
-    background-color: tomato;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .card {
-    background-color: yellow;
     width: 250px;
   }
 }
 
 @media only screen and (max-width: 300px) {
   #alternatives-list {
-    background-color: tomato;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .card {
-    background-color: yellow;
     width: 250px;
   }
 }
 
 @media only screen and (max-width: 250px) {
   #alternatives-list {
-    background-color: tomato;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .card {
-    background-color: yellow;
     width: 200px;
   }
 }
 
 @media only screen and (max-width: 200px) {
   #alternatives-list {
-    background-color: tomato;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .card {
-    background-color: yellow;
     width: 150px;
   }
 }

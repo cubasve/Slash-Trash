@@ -99,7 +99,7 @@ module.exports = [
     image: 'https://i.ibb.co/gVb5Lwb/tweezer.jpg',
   },
   {
-    swap: 'Electric shaver/Epilator',
+    swap: 'Epilator',
     description: 'Machine-operated devices to remove hair can be reused and simply need to be recharged. ',
     image: 'https://i.ibb.co/9rf6MzK/epilator.jpg',
   },
@@ -160,7 +160,7 @@ module.exports = [
   },
   {
     swap: 'Packaging',
-    description: 'Be selective about the product packaging. Choose paper, metal packaging and minimal plastic packaging.',
+    description: 'Be selective about the product packaging. Choose paper, metal packaging and minimal plastic packaging. Also, invest in multipurpose makeup products (ex. cream blush as eyeshadow, lipgloss and blush).',
     image: 'https://i.ibb.co/r5YRjHH/packaging.jpg'
   },
   {

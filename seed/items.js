@@ -4,7 +4,7 @@
 module.exports = [
   {
     houseItem: 'Pan',
-    problem: 'Non-stick pans have a layer of teflon that is gradually removed with use and leaches into the food',
+    problem: 'Non-stick pans have a layer of teflon that is gradually removed with use and leaches into the food. It also has a finite lifespan and requires you to repurchase every few years.',
     category: 'Kitchen',
     alternatives: ['Cast Iron', 'Stainless Steel', 'Enameled Cast Iron'],
   },
@@ -40,13 +40,13 @@ module.exports = [
   },
   {
     houseItem: 'Clothing',
-    problem: 'Textile waste is a cause of pollution and synthetic clothing sheds microplastics into waterways when washed.',
+    problem: 'Textile waste is a large contributor to pollution and synthetically-made clothing shed microplastics into waterways when washed.',
     category: 'Bedroom',
     alternatives: ['Second-Hand', 'Natural Fabrics', 'Repair', 'Borrow/Rent'],
   },
   {
     houseItem: 'Pencil',
-    problem: '',
+    problem: 'Plastic mechanical pencils are destined for landill.',
     category: 'Workspace',
     alternatives: ['Wooden Pencil', 'Stainless Steel Mechanical Pencil'],
   },
@@ -54,7 +54,7 @@ module.exports = [
     houseItem: 'Razor',
     problem: 'Disposable razors have a lifespan of about 3 months, and then they are discarded to end up in landfills.',
     category: 'Bathroom',
-    alternatives: ['Reusable Razor', 'Sugaring', 'Thread', 'Terracycle Program', 'Laser hair removal', 'Tweezers', 'Electric shaver/Epilator'],
+    alternatives: ['Reusable Razor', 'Sugaring', 'Thread', 'Terracycle Program', 'Laser hair removal', 'Tweezers', 'Epilator'],
   },
   {
     houseItem: 'Period/Tampons/Pads',
@@ -64,25 +64,25 @@ module.exports = [
   },
   {
     houseItem: 'Gift wrap',
-    problem: 'Gift wrap is thrown away after a gift is opened and is often not recycleable since it has a coating of plastic.',
+    problem: 'Gift wrap is thrown away after a gift is opened and is often not recyclable since it has a coating of plastic.',
     category: 'Holidays',
     alternatives: ['Furoshiki', 'Container', 'A gift in a gift']
   },
   {
     houseItem: 'Eyes',
-    problem: '',
+    problem: 'Contact lenses, cleaning solution, and its packaging are destined to landfills when thrown in the trash.',
     category: 'Bathroom',
     alternatives: ['Laser Eye Surgery', 'Glasses', 'Contact lenses']
   },
   {
     houseItem: 'Cosmetics/Makeup',
-    problem: '',
+    problem: 'The beauty industry is constantly launching new products, which uses a lot of resources and energy to distribute and dispose of these items.',
     category: 'Bathroom',
     alternatives: ['Cosmetic Brands', 'Packaging', 'Terracycle Program']
   },
   {
-    houseItem: 'Gift/Present',
-    problem: '',
+    houseItem: 'Present/Gift',
+    problem: 'Some gifts become a source of clutter or become trash because they are not used.',
     category: 'Holidays',
     alternatives: ['Experiences', 'Your time', 'Services', 'Digital gifts', 'Consumables', 'Cash', 'Household goods']
   },

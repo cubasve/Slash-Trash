@@ -72,6 +72,9 @@ body {
   .card {
     width: 250px;
   }
+  .swap-title {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
@@ -79,6 +82,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .swap-title {
+    font-size: 18px;
   }
 }
 
@@ -91,6 +97,9 @@ body {
   .card {
     width: 230px;
   }
+  .swap-title {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 200px) {
@@ -101,5 +110,8 @@ body {
   }
   .card {
     width: 180px;
+  }
+  .swap-title {
+    font-size: 18px;
   }
 }

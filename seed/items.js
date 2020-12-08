@@ -33,7 +33,7 @@ module.exports = [
     alternatives: ['Refill', 'Bar', 'Buy in Bulk', 'Terracycle Program'],
   },
   {
-    houseItem: 'Lotion/Cream/Moisturizer',
+    houseItem: 'Lotion/ Cream/ Moisturizer',
     problem: 'Bottles are used up every few months and are likely not recycled because it is more expensive to recycle used plastic.',
     category: 'Bathroom',
     alternatives: ['Refill', 'Bar', 'Buy in Bulk', 'Terracycle Program'],
@@ -57,7 +57,7 @@ module.exports = [
     alternatives: ['Reusable Razor', 'Sugaring', 'Thread', 'Terracycle Program', 'Laser hair removal', 'Tweezers', 'Epilator'],
   },
   {
-    houseItem: 'Period/Tampons/Pads',
+    houseItem: 'Tampons/Pads (Period)',
     problem: 'Disposable menstrual products are single-use items that contribute to our landfills.',
     category: 'Bathroom',
     alternatives: ['Menstrual cup', 'Cotton tampon', 'Reusable pad', 'Period underwear']

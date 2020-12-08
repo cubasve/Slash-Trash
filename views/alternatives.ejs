@@ -1,14 +1,11 @@
 <%- include('./partials/header') %>
-<br>
 <!-- <% if (user) { %>
 <form action="/swaps" method="GET">
   <button type="submit" class="btn white-text">See your swap list</button>
 </form>
 <% } %> -->
 
-<br>
 <div class="page-body">
-
   <nav>
     <div class="nav-wrapper">
       <form id="search-swaps" method="GET" action="/alternatives">
@@ -39,8 +36,8 @@
 
   <% if (item) { %>
 
-  <h3>Item: <%= item.houseItem %></h3>
-  <h4>Problem: <%= item.problem %></h4>
+  <h4>Item: <%= item.houseItem %></h4>
+  <h5>Problem: <%= item.problem %></h5>
 
   <section id="alternatives-list">
     <% item.alternatives.forEach(function (a){ %>
@@ -52,8 +49,9 @@
       </div>
 
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4"><%= a.swap %><i class="material-icons right">
-            more_vert</i></span>
+        <span class="card-title activator grey-text text-darken-4">
+          <p class="swap-title"><%= a.swap %><i class="material-icons right">more_vert</i></p>
+        </span>
         <% if (user) { %>
         <form method="POST" action="/swaps">
           <input type="hidden" name="alternative" value="<%= a._id %>" />
@@ -64,7 +62,9 @@
       </div>
 
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4"><%= a.swap %><i class="material-icons right">close</i></span>
+        <span class="card-title grey-text text-darken-4">
+          <p class="swap-title"><%= a.swap %><i class="material-icons right">close</i></p>
+        </span>
         <h6><%= a.description %></h6>
       </div>
 

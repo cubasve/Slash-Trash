@@ -44,7 +44,7 @@ module.exports = [
   {
     swap: 'Second-Hand',
     description: 'Thrift shops, Hand-me downs, Cosignment shops, etc.',
-    image: 'https://i.ibb.co/M7Tg0Yp/second-Hand.jpg',
+    image: 'https://i.ibb.co/YLg7TjH/second-Hand2.jpg',
   },
   {
     swap: 'Natural Fabrics',
@@ -165,7 +165,7 @@ module.exports = [
   },
   {
     swap: 'Experiences',
-    description: 'Ex. Workshop/classes, theatre/play/concert/movie/museum, theme park/zoo, restaurant, etc.',
+    description: 'Ex. Workshop/ classes, theatre/ play/ concert/ movie/ museum, theme park/ zoo, restaurant, etc.',
     image: 'https://i.ibb.co/D9s8h4c/experiences.jpg'
   },
   {
@@ -175,7 +175,7 @@ module.exports = [
   },
   {
     swap: 'Services',
-    description: 'Ex. Facial, massage, gym membership, manicure/pedicure, etc.',
+    description: 'Ex. Facial, massage, gym membership, manicure/ pedicure, etc.',
     image: 'https://i.ibb.co/hg9PGqy/services.jpg'
   },
   {
@@ -185,7 +185,7 @@ module.exports = [
   },
   {
     swap: 'Consumables',
-    description: 'Ex. Homemade/store-bought cookies, jam, honey, maple syrup, chocolate, wine, local delicacies, etc.',
+    description: 'Ex. Homemade/ store-bought cookies, jam, honey, maple syrup, chocolate, wine, local delicacies, etc.',
     image: 'https://i.ibb.co/6r5xy65/consumables.jpg'
   },
   {

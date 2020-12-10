@@ -63,7 +63,7 @@ module.exports = [
     alternatives: ['Menstrual cup', 'Cotton tampon', 'Reusable pad', 'Period underwear']
   },
   {
-    houseItem: 'Gift wrap',
+    houseItem: 'Wrapping paper',
     problem: 'Gift wrap is thrown away after a gift is opened and is often not recyclable since it has a coating of plastic.',
     category: 'Holidays',
     alternatives: ['Furoshiki', 'Container', 'A gift in a gift']

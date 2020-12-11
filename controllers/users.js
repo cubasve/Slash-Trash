@@ -12,19 +12,30 @@ function listSwap(req, res) {
   if (!req.user) {
     return res.redirect("/alternatives");
   }
+  /* /swaps page works, but the items' and alternatives' values are blank - delete button is visible */
+  // try {
+  //   User.findById(req.user._id).populate("swapsForUser.item").populate("swapsForUser.alternative").exec();
+  // } catch (err) {
+  //   console.error(err);
+  // }
+  // res.render("userSwaps", { user: req.user });
+
   User.findById(req.user._id)
     .populate("swapsForUser.item")
     .populate("swapsForUser.alternative")
     .exec(function (err, user) {
-      if (err) return err;
+      if (err) console.error(err);
       res.render("userSwaps", { user: user });
       console.log(user);
     });
-
 }
 
 function createSwap(req, res) {
-  req.user.swapsForUser.push(req.body);
+  try {
+    req.user.swapsForUser.push(req.body);
+  } catch (err) {
+    console.error(err);
+  }
   req.user.save(function (err, swapsForUser) {
     res.redirect("/swaps");
   });

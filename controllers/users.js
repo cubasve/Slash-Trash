@@ -10,15 +10,17 @@ module.exports = {
 
 function listSwap(req, res) {
   if (!req.user) {
-    return res.redirect("/");
+    return res.redirect("/alternatives");
   }
   User.findById(req.user._id)
     .populate("swapsForUser.item")
     .populate("swapsForUser.alternative")
     .exec(function (err, user) {
-      console.log(user);
+      if (err) return err;
       res.render("userSwaps", { user: user });
+      console.log(user);
     });
+
 }
 
 function createSwap(req, res) {

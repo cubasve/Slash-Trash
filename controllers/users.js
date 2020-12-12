@@ -46,6 +46,7 @@ function deleteSwap(req, res) {
   //   req.user.swapsForUser.remove(req.params.id);
   //Don't need BOTH pull() AND remove() --> they do the same thing - choose one
   req.user.save(function (err, user) {
+    if (err) console.error(err)
     res.redirect("/swaps");
   });
 }

@@ -11,33 +11,40 @@
   <h3><%= user.name %>'s Swaps</h3>
 
   <% if (user.swapsForUser.length > 0) { %>
+  <section id="alternatives-list">
+    <% user.swapsForUser.forEach(function (s) { %>
+    <div class="card">
 
-  <table>
-    <thead>
-      <tr>
-        <th>Item: </th>
-        <th>Alternative: </th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <% user.swapsForUser.forEach(function (s) { %>
-      <tr>
-        <td><%= s.item.houseItem %></td>
-        <td><%= s.alternative.swap %></td>
-        <td>
-          <form action="/swaps/<%= s.id %>?_method=DELETE" class="delete-form" method="POST">
-            <button type="submit" class="btn white-text">Delete Swap</button>
-          </form>
-        </td>
-      </tr>
-      <% }) %>
-</section>
-</tbody>
-</table>
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="<%= s.alternative.image %>">
+      </div>
 
-<% } else { %>
-<h3>No Swaps Added</h3>
-<% } %>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">
+          <p class="swap-title"><%= s.alternative.swap %><i class="material-icons right">more_vert</i></p>
+        </span>
 
-<%- include('./partials/footer') %>
+        <form action="/swaps/<%= s.id %>?_method=DELETE" class="delete-form" method="POST">
+          <button type="submit" class="btn white-text">Delete Swap</button>
+        </form>
+      </div>
+
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">
+          <p class="swap-title">DESCRIPTION<i class="material-icons right">close</i></p>
+        </span>
+        <h6><span class="swap-item-alternative">Item:</span> <%= s.item.houseItem %></h6>
+        <h6><span class="swap-item-alternative">Alternative:</span> <%= s.alternative.swap %></h6>
+        <br />
+        <h6><%= s.alternative.description %></h6>
+      </div>
+
+    </div>
+    <% }) %>
+  </section>
+
+  <% } else { %>
+  <h4>No Swaps Added</h4>
+  <% } %>
+
+  <%- include('./partials/footer') %>

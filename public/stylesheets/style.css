@@ -20,6 +20,10 @@ body {
   max-width: 100%;
 }
 
+.swap-item-alternative {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 1249px) {
   #alternatives-list {
     display: grid;

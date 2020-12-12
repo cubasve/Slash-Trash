@@ -1,50 +1,50 @@
 <%- include('./partials/header') %>
 
-<section id="userSwap-list">
+<div class="page-body">
+  <section id="userSwap-list">
 
-  <br>
+    <form action="/alternatives" method="GET">
+      <button type="submit" class="btn white-text">Search for more Alternatives</button>
+    </form>
 
-  <form action="/alternatives" method="GET">
-    <button type="submit" class="btn white-text">Search for more Alternatives</button>
-  </form>
+    <h3><%= user.name %>'s Swaps</h3>
 
-  <h3><%= user.name %>'s Swaps</h3>
+    <% if (user.swapsForUser.length > 0) { %>
+    <section id="alternatives-list">
+      <% user.swapsForUser.forEach(function (s) { %>
+      <div class="card">
 
-  <% if (user.swapsForUser.length > 0) { %>
-  <section id="alternatives-list">
-    <% user.swapsForUser.forEach(function (s) { %>
-    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="<%= s.alternative.image %>">
+        </div>
 
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="<%= s.alternative.image %>">
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">
+            <p class="swap-title"><%= s.alternative.swap %><i class="material-icons right">more_vert</i></p>
+          </span>
+
+          <form action="/swaps/<%= s.id %>?_method=DELETE" class="delete-form" method="POST">
+            <button type="submit" class="btn white-text">Delete Swap</button>
+          </form>
+        </div>
+
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">
+            <p class="swap-title">DESCRIPTION<i class="material-icons right">close</i></p>
+          </span>
+          <h6><span class="swap-item-alternative">Item:</span> <%= s.item.houseItem %></h6>
+          <h6><span class="swap-item-alternative">Alternative:</span> <%= s.alternative.swap %></h6>
+          <br />
+          <h6><%= s.alternative.description %></h6>
+        </div>
+
       </div>
+      <% }) %>
+    </section>
 
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">
-          <p class="swap-title"><%= s.alternative.swap %><i class="material-icons right">more_vert</i></p>
-        </span>
+    <% } else { %>
+    <h4>No Swaps Added</h4>
+    <% } %>
+</div>
 
-        <form action="/swaps/<%= s.id %>?_method=DELETE" class="delete-form" method="POST">
-          <button type="submit" class="btn white-text">Delete Swap</button>
-        </form>
-      </div>
-
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">
-          <p class="swap-title">DESCRIPTION<i class="material-icons right">close</i></p>
-        </span>
-        <h6><span class="swap-item-alternative">Item:</span> <%= s.item.houseItem %></h6>
-        <h6><span class="swap-item-alternative">Alternative:</span> <%= s.alternative.swap %></h6>
-        <br />
-        <h6><%= s.alternative.description %></h6>
-      </div>
-
-    </div>
-    <% }) %>
-  </section>
-
-  <% } else { %>
-  <h4>No Swaps Added</h4>
-  <% } %>
-
-  <%- include('./partials/footer') %>
+<%- include('./partials/footer') %>

@@ -1,11 +1,13 @@
 <%- include('./partials/header') %>
-<!-- <% if (user) { %>
-<form action="/swaps" method="GET">
-  <button type="submit" class="btn white-text">See your swap list</button>
-</form>
-<% } %> -->
 
 <div class="page-body">
+
+  <% if (user) { %>
+  <form action="/swaps" method="GET">
+    <button type="submit" class="btn white-text">My Swap List</button>
+  </form>
+  <% } %>
+  <br>
   <nav>
     <div class="nav-wrapper">
       <form id="search-swaps" method="GET" action="/alternatives">
@@ -21,16 +23,6 @@
       </form>
     </div>
   </nav>
-
-  <!-- <form id="search-swaps" method="GET" action="/alternatives">
-    <div class="input-item">
-      <input name="q" type="text" placeholder="Search for eco-friendly alternatives" autocomplete="off" />
-
-      <div class="search-button">
-        <button type="submit" id="searchBtn" class="btn white-text">Search</button>
-      </div>
-    </div>
-  </form> -->
 
   <% if (didSearch) { %>
 

@@ -20,7 +20,7 @@ async function index(req, res) {
   }
   console.log(item);
 
-  res.render("alternatives", {
+  res.render("search", {
     title: "Search for alternatives",
     item,
     didSearch,

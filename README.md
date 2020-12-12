@@ -17,17 +17,25 @@ Why should we avoid plastic?
 
 ## Screenshots of Application:
 
-![image](https://user-images.githubusercontent.com/62129720/85089614-13ef5080-b1b1-11ea-98b8-afaff12506ed.png)
+![image](https://user-images.githubusercontent.com/62129720/101991453-bed15a80-3c7a-11eb-92fe-3af2dbe13451.png)
 
-![image](https://user-images.githubusercontent.com/62129720/85089585-033eda80-b1b1-11ea-915d-e4d98b53894c.png)
+![image](https://user-images.githubusercontent.com/62129720/101991439-a8c39a00-3c7a-11eb-824c-1440928ff9de.png)
 
-![image](https://user-images.githubusercontent.com/62129720/85089528-dab6e080-b1b0-11ea-97c5-b1577233c4e9.png)
+![image](https://user-images.githubusercontent.com/62129720/101991477-e88a8180-3c7a-11eb-895c-6e9e90f81007.png)
+
+![image](https://user-images.githubusercontent.com/62129720/101991496-12dc3f00-3c7b-11eb-9264-f5f3852f1def.png)
 
 ## Technologies Used:
-
 - MongoDB
 - Express
 - Node
+
+## Dependencies:
+- dotenv
+- ejs
+- materialize css
+- method-override
+- passport
 
 ## Getting Started:
 - Application: https://slash-trash.herokuapp.com/

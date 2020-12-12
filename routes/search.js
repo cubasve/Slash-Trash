@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const alternativesCtrl = require("../controllers/alternatives");
+const searchCtrl = require("../controllers/search");
 
 // Insert this middleware for routes that require a logged in user
 function isLoggedIn(req, res, next) {
@@ -8,7 +8,7 @@ function isLoggedIn(req, res, next) {
   res.redirect("/auth/google");
 }
 
-router.get("/", alternativesCtrl.index);
+router.get("/", searchCtrl.index);
 
 module.exports = router;
 

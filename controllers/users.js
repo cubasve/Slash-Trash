@@ -10,7 +10,7 @@ module.exports = {
 
 function listSwap(req, res) {
   if (!req.user) {
-    return res.redirect("/alternatives");
+    return res.redirect("/search");
   }
   /* /swaps page works, but the items' and alternatives' values are blank - delete button is visible */
   // try {

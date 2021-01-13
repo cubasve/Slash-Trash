@@ -37,6 +37,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Search.ejs (Search for swaps) */
 @media only screen and (min-width: 1249px) {
   #alternatives-list {
     display: grid;
@@ -130,5 +131,21 @@ body {
   }
   .swap-title {
     font-size: 18px;
+  }
+}
+
+/* Index.ejs (Homepage) */
+@media only screen and (max-width: 750px) {
+  .intro {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1400px) {
+  .intro {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
   }
 }

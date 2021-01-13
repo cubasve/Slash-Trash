@@ -8,12 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!-- Google Icon Fonts used by Materialize -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <script defer src="../../public/javascripts/script.js"></script> -->
 
   <!-- Materialize CSS Framework -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="stylesheets/style.css" />
 
   <!-- JavaScript for Materialize -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="/stylesheets/style.css" />
 
@@ -23,36 +25,29 @@
 </head>
 
 <body>
+
   <ul id="dropdown1" class="dropdown-content">
-    <li><a href="search.ejs">Swap Search</a></li>
-    <li><a href="userSwaps.ejs">My Swaps</a></li>
-    <li class="divider"></li>
-    <li><a href="/logout">Log Out</a></li>
+    <% if (user) { %>
+      <li><a href="/search" class="black-text"><i class="material-icons left black-text">search</i>Search</a></li>
+      <li><a href="/swaps" class="black-text"><i class=" material-icons left black-text">view_module</i>My Swaps</a>
+      </li>
+      <li class="divider"></li>
+      <li><a href="/logout" class="black-text"><i class=" material-icons leftblack-text">trending_flat</i>Log Out</a>
+      </li>
+      <% } else { %>
+        <li><a href="/search" class="black-text"><i class=" material-icons left black-text">search</i>Search</a></li>
+        <li class="divider"></li>
+        <li><a href="/auth/google" class="black-text"><i class=" material-icons left black-text">vpn_key</i>Google
+            Login</a></li>
+        <% } %>
   </ul>
 
   <nav>
     <div class="nav-wrapper light-green darken-4">
       <a href="/" class="brand-logo left"><i class="large material-icons">delete_forever</i>Slash Trash</a>
-      <!-- <ul>
-        <li>
-          <% if (user) { %>
-          <a href="/swaps">My Swaps</a>
-          <% } %>
-        </li>
-      </ul> -->
-
-      <!-- <% if (user) { %> <form action="/swaps" method="GET">
-        <button type="submit" class="btn white-text">My Swaps</button>
-      </form>
-      <% } %> -->
 
       <ul class="right">
-        <li>
-          <% if (user) { %>
-            <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-            <% } else { %>
-              <a href="/auth/google"><i class="material-icons left">vpn_key</i>Google Login</a>
-              <% } %>
+        <li><a class="dropdown-trigger" href="#" data-target="dropdown1"><i class="material-icons right">menu</i></a>
         </li>
       </ul>
     </div>

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="stylesheets/style.css" />
 
   <!-- JavaScript for Materialize -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="/stylesheets/style.css" />
 
@@ -25,17 +26,27 @@
 </head>
 
 <body>
+  <ul id="dropdown1" class="dropdown-content">
+    <% if (user) { %>
+      <li><a href="/search" class="black-text"><i class="material-icons left black-text">search</i>Search</a></li>
+      <li><a href="/swaps" class="black-text"><i class=" material-icons left black-text">view_module</i>My Swaps</a>
+      </li>
+      <li class="divider"></li>
+      <li><a href="/logout" class="black-text"><i class=" material-icons leftblack-text">trending_flat</i>Log Out</a>
+      </li>
+      <% } else { %>
+        <li><a href="/search" class="black-text"><i class=" material-icons left black-text">search</i>Search</a></li>
+        <li class="divider"></li>
+        <li><a href="/auth/google" class="black-text"><i class=" material-icons left black-text">vpn_key</i>Google
+            Login</a></li>
+        <% } %>
+  </ul>
 
   <nav>
     <div class="nav-wrapper light-green darken-4">
       <a href="/" class="brand-logo left"><i class="large material-icons">delete_forever</i>Slash Trash</a>
       <ul class="right">
-        <li>
-          <% if (user) { %>
-            <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-            <% } else { %>
-              <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
-              <% } %>
+        <li><a class="dropdown-trigger" href="#" data-target="dropdown1"><i class="material-icons right">menu</i></a>
         </li>
       </ul>
     </div>
@@ -153,7 +164,11 @@
     </div>
 
   </div>
-
+  <script>
+    $(document).ready(function () {
+      $(".dropdown-trigger").dropdown();
+    });
+  </script>
 </body>
 
 </html>

@@ -17,13 +17,18 @@ Why should we avoid plastic?
 
 ## Screenshots of Application:
 
-![image](https://user-images.githubusercontent.com/62129720/101991453-bed15a80-3c7a-11eb-92fe-3af2dbe13451.png)
+![image](https://user-images.githubusercontent.com/62129720/104396163-2ac40e80-5518-11eb-9112-8be766d06e79.png)
 
-![image](https://user-images.githubusercontent.com/62129720/101991439-a8c39a00-3c7a-11eb-824c-1440928ff9de.png)
+![image](https://user-images.githubusercontent.com/62129720/104396235-49c2a080-5518-11eb-8741-b93750c22045.png)
 
-![image](https://user-images.githubusercontent.com/62129720/101991477-e88a8180-3c7a-11eb-895c-6e9e90f81007.png)
+![image](https://user-images.githubusercontent.com/62129720/104396295-6232bb00-5518-11eb-9e6b-dccc5b8f14e2.png)
 
-![image](https://user-images.githubusercontent.com/62129720/101991496-12dc3f00-3c7b-11eb-9264-f5f3852f1def.png)
+![image](https://user-images.githubusercontent.com/62129720/104396345-75de2180-5518-11eb-861d-88bd8506bf3d.png)
+
+![image](https://user-images.githubusercontent.com/62129720/104396402-973f0d80-5518-11eb-86a4-b03e82dcefaa.png)
+
+![image](https://user-images.githubusercontent.com/62129720/104396431-a920b080-5518-11eb-9869-211b4e280825.png)
+
 
 ## Technologies Used:
 - MongoDB
@@ -45,9 +50,6 @@ Why should we avoid plastic?
 
 - **Additional Items and Alternatives:**
   This application currently has 5 items and 13 alternatives. More data needs to be added.
-
-- **Incorporate a problem-solution structure:**
-  The problem is the current household item and the solution is the eco-friendly alternative. I only stated why the alternative is a better choice, but did not state the issue with the household item. The users may not know why they should use the alternative.
 
 - **Include a page for beginners and a page for tips:**
   Users who are novices to this lifestyle might feel overwhelmed with all the information.

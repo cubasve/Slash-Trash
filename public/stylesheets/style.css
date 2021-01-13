@@ -3,7 +3,7 @@ body {
 }
 
 .page-body {
-  padding: 30px;
+  padding: 50px;
 }
 
 .card {
@@ -22,6 +22,19 @@ body {
 
 .swap-item-alternative {
   font-weight: bold;
+}
+
+.re {
+  color: red;
+}
+
+.row {
+  text-align: center;
+}
+
+.section {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 1249px) {

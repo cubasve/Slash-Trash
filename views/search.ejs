@@ -1,78 +1,92 @@
 <%- include('./partials/header') %>
 
-<div class="page-body">
+  <div class="page-body">
 
-  <% if (user) { %>
-  <form action="/swaps" method="GET">
-    <button type="submit" class="btn white-text">My Swap List</button>
-  </form>
-  <% } %>
-  <br>
-  <nav>
-    <div class="nav-wrapper">
-      <form id="search-swaps" method="GET" action="/search">
-        <div class="input-field">
-
-          <input name="q" id="search" type="search" placeholder="Search for eco-friendly alternatives"
-            autocomplete="off">
-
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-
-          <i class="material-icons">close</i>
-        </div>
+    <% if (user) { %>
+      <form action="/swaps" method="GET">
+        <button type="submit" class="btn white-text brown">My Swap List</button>
       </form>
-    </div>
-  </nav>
+      <% } %>
+        <br>
+        <nav>
+          <div class="nav-wrapper light-green darken-1">
+            <form id="search-swaps" method="GET" action="/search">
+              <div class="input-field">
 
-  <% if (didSearch) { %>
+                <input name="q" id="search" type="search" placeholder="Search for eco-friendly alternatives"
+                  autocomplete="off">
 
-  <% if (item) { %>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
 
-  <h4>Item: <%= item.houseItem %></h4>
-  <h5>Problem: <%= item.problem %></h5>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
 
-  <section id="alternatives-list">
-    <% item.alternatives.forEach(function (a){ %>
+        <% if (didSearch) { %>
 
-    <div class="card">
+          <% if (item) { %>
 
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="<%= a.image %>">
-      </div>
+            <h4>Item: <%= item.houseItem %>
+            </h4>
+            <h5>Problem: <%= item.problem %>
+            </h5>
 
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">
-          <p class="swap-title"><%= a.swap %><i class="material-icons right">more_vert</i></p>
-        </span>
-        <% if (user) { %>
-        <form method="POST" action="/swaps">
-          <input type="hidden" name="alternative" value="<%= a._id %>" />
-          <input type="hidden" name="item" value="<%= item._id %>" />
-          <button type="submit" class="btn white-text">Add Swap</button>
-        </form>
-        <% } %>
-      </div>
+            <section id="alternatives-list">
+              <% item.alternatives.forEach(function (a){ %>
 
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">
-          <p class="swap-title"><%= a.swap %><i class="material-icons right">close</i></p>
-        </span>
-        <h6><%= a.description %></h6>
-      </div>
+                <div class="card">
 
-    </div>
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="<%= a.image %>">
+                  </div>
 
-    <% }) %>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">
+                      <p class="swap-title">
+                        <%= a.swap %><i class="material-icons right">more_vert</i>
+                      </p>
+                    </span>
+                    <% if (user) { %>
+                      <form method="POST" action="/swaps">
+                        <input type="hidden" name="alternative" value="<%= a._id %>" />
+                        <input type="hidden" name="item" value="<%= item._id %>" />
+                        <button type="submit" class="btn white-text brown">Add Swap</button>
+                      </form>
+                      <% } %>
+                  </div>
 
-  </section>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">
+                      <p class="swap-title">
+                        <%= a.swap %><i class="material-icons right">close</i>
+                      </p>
+                    </span>
+                    <h6>
+                      <%= a.description %>
+                    </h6>
+                  </div>
 
-  <% } else { %>
-  <h3>No Item Found</h3>
-  <% } %>
+                </div>
 
-  <% } else { %>
-  <h3>Search for Item</h3>
-  <% } %>
-</div>
+                <% }) %>
 
-<%- include('./partials/footer') %>
+            </section>
+
+            <% } else { %>
+              <h3>No Item Found</h3>
+              <% } %>
+
+                <% } else { %>
+                  <h3>REMINDER</h3>
+                  <h4>The most sustainable option: Use what you already have</h4>
+                  <ul>
+                    <li>
+                      <h5>Once that item is used up, then replace it with an eco-friendly alternative</h5>
+                    </li>
+                  </ul>
+                  <% } %>
+  </div>
+
+  <%- include('./partials/footer') %>

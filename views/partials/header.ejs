@@ -23,10 +23,16 @@
 </head>
 
 <body>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="search.ejs">Swap Search</a></li>
+    <li><a href="userSwaps.ejs">My Swaps</a></li>
+    <li class="divider"></li>
+    <li><a href="/logout">Log Out</a></li>
+  </ul>
+
   <nav>
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo left"><i class="large material-icons">delete_forever</i>Slash
-        Trash</a>
+    <div class="nav-wrapper light-green darken-4">
+      <a href="/" class="brand-logo left"><i class="large material-icons">delete_forever</i>Slash Trash</a>
       <!-- <ul>
         <li>
           <% if (user) { %>
@@ -43,10 +49,10 @@
       <ul class="right">
         <li>
           <% if (user) { %>
-          <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-          <% } else { %>
-          <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
-          <% } %>
+            <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+            <% } else { %>
+              <a href="/auth/google"><i class="material-icons left">vpn_key</i>Google Login</a>
+              <% } %>
         </li>
       </ul>
     </div>

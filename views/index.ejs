@@ -27,38 +27,125 @@
 <body>
 
   <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper light-green darken-4">
       <a href="/" class="brand-logo left"><i class="large material-icons">delete_forever</i>Slash Trash</a>
       <ul class="right">
         <li>
           <% if (user) { %>
-          <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
-          <% } else { %>
-          <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
-          <% } %>
+            <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+            <% } else { %>
+              <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+              <% } %>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class=page-body>
+  <div class="page-body">
     <h1>Slash Trash</h1>
     <h4>Track your waste reduction</h4>
     <h5>Start your journey to a low-waste lifestyle</h5>
     <br />
     <form action="/search" method="GET">
-      <button type="submit" id="alternatives-page" class="btn white-text">SEARCH FOR SWAPS</button>
+      <button type="submit" id="alternatives-page" class="btn white-text brown">SEARCH FOR SWAPS</button>
     </form>
-  </div>
 
-  <!-- <ul id="tabs-swipe-demo" class="tabs">
-    <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-    <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
-    <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
-  </ul>
-  <div id="test-swipe-1" class="col s12 blue">Hello 1</div>
-  <div id="test-swipe-2" class="col s12 red">Hello 2</div>
-  <div id="test-swipe-3" class="col s12 green">Hello 3</div> -->
+    <div class="section">
+      <h4>If it can't be <span class="re">RE</span>duced, <span class="re">RE</span>used, <span
+          class="re">RE</span>paired, <span class="re">RE</span>built, <span class="re">RE</span>furbished, <span
+          class="re">RE</span>finished, <span class="re">RE</span>sold, <span class="re">RE</span>cycled or composted,
+        then it should be <span class="re">RE</span>stricted, <span class="re">RE</span>designed or <span
+          class="re">RE</span>moved from production. </h4>
+      <h6>-Pete Seeger</h6>
+    </div>
+
+    <div class="section">
+      <h4>Materials to look for:</h4>
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card-panel green lighten-1">
+            <span class="white-text">GLASS</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green">
+            <span class="white-text">METAL</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-1">
+            <span class="white-text">ALUMINUM</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-2">
+            <span class="white-text">STAINLESS STEEL</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green lighten-1">
+            <span class="white-text">COPPER</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green">
+            <span class="white-text">WOOD</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-1">
+            <span class="white-text">BAMBOO</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-2">
+            <span class="white-text">CORK</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green lighten-1">
+            <span class="white-text">LINEN</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green">
+            <span class="white-text">COTTON</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-1">
+            <span class="white-text">HEMP</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-2">
+            <span class="white-text">PLANT FIBERS</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green lighten-1">
+            <span class="white-text">STONEWARE</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green">
+            <span class="white-text">CERAMIC</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-1">
+            <span class="white-text">CLAY</span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-2">
+            <span class="white-text">NONE!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 

@@ -45,10 +45,22 @@
   <nav>
     <div class="nav-wrapper light-green darken-4">
       <a href="/" class="brand-logo left"><i class="large material-icons">delete_forever</i>Slash Trash</a>
-
-      <ul class="right">
-        <li><a class="dropdown-trigger" href="#" data-target="dropdown1"><i class="material-icons right">menu</i></a>
-        </li>
+      <a class="dropdown-trigger hide-on-large-only right" href="#" data-target="dropdown1"><i
+          class="material-icons right">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <% if (user) { %>
+          <li><a href="/search" class="white-text"><i class="material-icons left white-text">search</i>Search</a></li>
+          <li><a href="/swaps" class="white-text"><i class=" material-icons left white-text">view_module</i>My Swaps</a>
+          </li>
+          <li><a href="/logout" class="white-text"><i
+                class=" material-icons left white-text">trending_flat</i>Logout</a>
+          </li>
+          <% } else { %>
+            <li><a href="/search" class="white-text"><i class=" material-icons left white-text">search</i>Search</a>
+            </li>
+            <li><a href="/auth/google" class="white-text"><i class=" material-icons left white-text">vpn_key</i>Google
+                Login</a></li>
+            <% } %>
       </ul>
     </div>
   </nav>
